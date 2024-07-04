@@ -1,0 +1,755 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{peruzzo_variational_2014}{article}{}
+      \name{author}{8}{}{%
+        {{hash=da632f662bb1ab5c3e05ddb80b6cd201}{%
+           family={Peruzzo},
+           familyi={P\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=44d80c9bccbe7462fe524bbf9cd54a08}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c0ad2cf76d13d7b9fb852ca865569241}{%
+           family={Shadbolt},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cbadbf9460f01d20432bc4fb34345309}{%
+           family={Yung},
+           familyi={Y\bibinitperiod},
+           given={Man-Hong},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=30e428aa9e63bc24127324a4c1fefabc}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiao-Qi},
+           giveni={X\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=2d8133b5eb867e28af9ca9ea41105b5c}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7b625f48d9f8201090af393e1d66980a}{%
+           family={O’Brien},
+           familyi={O\bibinitperiod},
+           given={Jeremy\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \strng{fullhash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \strng{bibnamehash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \strng{authorbibnamehash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \strng{authornamehash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \strng{authorfullhash}{5e0d3548ad5f86de3d79ee61e836ec14}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum computers promise to efficiently solve important problems that are intractable on a conventional computer. For quantum systems, where the physical dimension grows exponentially, finding the eigenvalues of certain operators is one such intractable problem and remains a fundamental challenge. The quantum phase estimation algorithm efficiently finds the eigenvalue of a given eigenvector but requires fully coherent evolution. Here we present an alternative approach that greatly reduces the requirements for coherent evolution and combine this method with a new approach to state preparation based on ansätze and classical optimization. We implement the algorithm by combining a highly reconfigurable photonic quantum processor with a conventional computer. We experimentally demonstrate the feasibility of this approach with an example from quantum chemistry—calculating the ground-state molecular energy for He–H+. The proposed approach drastically reduces the coherence time requirements, enhancing the potential of quantum resources available today and in the near future.}
+      \field{day}{23}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{A variational eigenvalue solver on a photonic quantum processor}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{5}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4213}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms5213
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\YK78JJGW\\Peruzzo et al. - 2014 - A variational eigenvalue solver on a photonic quan.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms5213
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms5213
+      \endverb
+      \keyw{Quantum chemistry,Applied physics,Quantum optics}
+    \endentry
+    \entry{mcclean_theory_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8c1a9ea5a335989d4957424b7cc2f7b9}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \strng{fullhash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \strng{bibnamehash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \strng{authorbibnamehash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \strng{authornamehash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \strng{authorfullhash}{7e5c493347d687b6e14dc4b030f9aa64}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many quantum algorithms have daunting resource requirements when compared to what is available today. To address this discrepancy, a quantum-classical hybrid optimization scheme known as ‘the quantum variational eigensolver’ was developed (Peruzzo et al 2014 Nat. Commun. 5 4213) with the philosophy that even minimal quantum resources could be made useful when used in conjunction with classical routines. In this work we extend the general theory of this algorithm and suggest algorithmic improvements for practical implementations. Specifically, we develop a variational adiabatic ansatz and explore unitary coupled cluster where we establish a connection from second order unitary coupled cluster to universal gate sets through a relaxation of exponential operator splitting. We introduce the concept of quantum variational error suppression that allows some errors to be suppressed naturally in this algorithm on a pre-threshold quantum device. Additionally, we analyze truncation and correlated sampling in Hamiltonian averaging as ways to reduce the cost of this procedure. Finally, we show how the use of modern derivative free optimization techniques can offer dramatic computational savings of up to three orders of magnitude over previously used optimization techniques.}
+      \field{issn}{1367-2630}
+      \field{journaltitle}{New Journal of Physics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{note}{Publisher: {IOP} Publishing}
+      \field{number}{2}
+      \field{shortjournal}{New J. Phys.}
+      \field{title}{The theory of variational hybrid quantum-classical algorithms}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{18}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{023023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/18/2/023023
+      \endverb
+      \verb{file}
+      \verb IOP Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\Q3YY9KCC\\McClean et al. - 2016 - The theory of variational hybrid quantum-classical.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1367-2630/18/2/023023
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1367-2630/18/2/023023
+      \endverb
+    \endentry
+    \entry{nielsen_quantum_2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=415ddff2f58b25977b1a2dedf18f4501}{%
+           family={Chuang},
+           familyi={C\bibinitperiod},
+           given={Isaac\bibnamedelima L.},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{fullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{bibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorbibnamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authornamehash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \strng{authorfullhash}{456599bb4a61c2e997e2a7e1a21b25b4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10th anniversary edition}
+      \field{isbn}{978-1-107-00217-3}
+      \field{title}{Quantum computation and quantum information}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb bafykbzaceace6ecz2zgmb2rmtkp7iqygt6iuifpy54s5pgzurqzk5hsckpic6.pdf:C\:\\Users\\stepa\\Zotero\\storage\\L2JMHJQU\\bafykbzaceace6ecz2zgmb2rmtkp7iqygt6iuifpy54s5pgzurqzk5hsckpic6.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{tilly_variational_2022}{article}{}
+      \name{author}{11}{}{%
+        {{hash=e89afd76e739d24b6a9e723873e46a0d}{%
+           family={Tilly},
+           familyi={T\bibinitperiod},
+           given={Jules},
+           giveni={J\bibinitperiod}}}%
+        {{hash=815b49d34a2166323e21f54355f9ce2c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongxiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e5d3d918b7be338f8a424a23f0dce0ba}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Shuxiang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=400cb20be1a645ad4be6c55d828fab8b}{%
+           family={Picozzi},
+           familyi={P\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+        {{hash=abfb3de829a93fdf1dbd5bcac06ef044}{%
+           family={Setia},
+           familyi={S\bibinitperiod},
+           given={Kanav},
+           giveni={K\bibinitperiod}}}%
+        {{hash=96641b60b95eb223b3df53d9263f63ff}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b1d176833e606713973a4617ef10e618}{%
+           family={Grant},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87c1e1f5d917ee25158301ca68f9794d}{%
+           family={Wossnig},
+           familyi={W\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a94f26fffc034d863986f733b1ceaeff}{%
+           family={Rungger},
+           familyi={R\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8c7b2231792946b925014d762dcf665a}{%
+           family={Booth},
+           familyi={B\bibinitperiod},
+           given={George\bibnamedelima H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=abde27073a2ab1a81311c3289a4e28c5}{%
+           family={Tennyson},
+           familyi={T\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{fullhash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{bibnamehash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{authorbibnamehash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{authornamehash}{f0d12517a9bb62c689bbce2a571c3243}
+      \strng{authorfullhash}{f0d12517a9bb62c689bbce2a571c3243}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The variational quantum eigensolver (or {VQE}), first developed by Peruzzo et al. (2014), has received significant attention from the research community in recent years. It uses the variational principle to compute the ground state energy of a Hamiltonian, a problem that is central to quantum chemistry and condensed matter physics. Conventional computing methods are constrained in their accuracy due to the computational limits facing exact modeling of the exponentially growing electronic wavefunction for these many-electron systems. The {VQE} may be used to model these complex wavefunctions in polynomial time, making it one of the most promising near-term applications for quantum computing. One important advantage is that variational algorithms have been shown to present some degree of resilience to the noise in the quantum hardware. Finding a path to navigate the relevant literature has rapidly become an overwhelming task, with many methods promising to improve different parts of the algorithm, but without clear descriptions of how the diverse parts fit together. The potential practical advantages of the algorithm are also widely discussed in the literature, but with varying conclusions. Despite strong theoretical underpinnings suggesting excellent scaling of individual {VQE} components, studies have pointed out that their various pre-factors could be too large to reach a quantum computing advantage over conventional methods. This review aims at disentangling the relevant literature to provide a comprehensive overview of the progress that has been made on the different parts of the algorithm, and to discuss future areas of research that are fundamental for the {VQE} to deliver on its promises. All the different components of the algorithm are reviewed in detail. These include the representation of Hamiltonians and wavefunctions on a quantum computer, the optimization process to find ground state energies, the post processing mitigation of quantum errors, and suggested best practices. We identify four main areas of future research: (1) optimal measurement schemes for reduction of circuit repetitions required; (2) large scale parallelization across many quantum computers; (3) ways to overcome the potential appearance of vanishing gradients in the optimization process for large systems, and how the number of iterations required for the optimization scales with system size; (4) the extent to which {VQE} suffers for quantum noise, and whether this noise can be mitigated in a tractable manner. The answers to these open research questions will determine the routes for the {VQE} to achieve quantum advantage as the quantum computing hardware scales up and as the noise levels are reduced.}
+      \field{day}{5}
+      \field{issn}{0370-1573}
+      \field{journaltitle}{Physics Reports}
+      \field{month}{11}
+      \field{series}{The Variational Quantum Eigensolver: a review of methods and best practices}
+      \field{shortjournal}{Physics Reports}
+      \field{shorttitle}{The Variational Quantum Eigensolver}
+      \field{title}{The Variational Quantum Eigensolver: A review of methods and best practices}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{986}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 128}
+      \range{pages}{128}
+      \verb{doi}
+      \verb 10.1016/j.physrep.2022.08.003
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\stepa\\Zotero\\storage\\LZIC5HBE\\Tilly et al. - 2022 - The Variational Quantum Eigensolver A review of m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370157322003118
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0370157322003118
+      \endverb
+      \keyw{Electronic structure,Many-body physics,Noisy intermediate scale quantum devices,Quantum chemistry,Quantum computing,Variational methods}
+    \endentry
+    \entry{feynman_simulating_1982}{article}{}
+      \name{author}{1}{}{%
+        {{hash=aac54ccf9c76aa4ba4310ed1334be7d8}{%
+           family={Feynman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{fullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{bibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorbibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authornamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorfullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1572-9575}
+      \field{journaltitle}{International Journal of Theoretical Physics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Int J Theor Phys}
+      \field{title}{Simulating physics with computers}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{21}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{467\bibrangedash 488}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/BF02650179
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\6S5JIPQH\\Feynman - 1982 - Simulating physics with computers.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02650179
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02650179
+      \endverb
+      \keyw{Quantum Mechanic,Calcite,Cellular Automaton,Quantum System,Wigner Function}
+    \endentry
+    \entry{feynman_quantum_1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=aac54ccf9c76aa4ba4310ed1334be7d8}{%
+           family={Feynman},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{fullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{bibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorbibnamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authornamehash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \strng{authorfullhash}{aac54ccf9c76aa4ba4310ed1334be7d8}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The physical limitations, due to quantum mechanics, on the functioning of computers are analyzed.}
+      \field{day}{1}
+      \field{issn}{1572-9516}
+      \field{journaltitle}{Foundations of Physics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Found Phys}
+      \field{title}{Quantum mechanical computers}
+      \field{urlday}{19}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{16}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{507\bibrangedash 531}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/BF01886518
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\CBU57WSI\\Feynman - 1986 - Quantum mechanical computers.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01886518
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01886518
+      \endverb
+      \keyw{Mechanical Computer,Physical Limitation,Quantum Mechanic,Quantum Mechanical Computer}
+    \endentry
+    \entry{nielsen_fermionic_2005}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=9464fec9e7bc41dacf4bbd5db14a22ec}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \strng{fullhash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \strng{bibnamehash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \strng{authorbibnamehash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \strng{authornamehash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \strng{authorfullhash}{9464fec9e7bc41dacf4bbd5db14a22ec}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When you learn undergraduate quantum mechanics, it starts out being all about wavefunctions and Hamiltonians, finding energy eigenvalues and eigenstates, calculating measurement probabilities, and so on. If your physics education was anything like mine, at some point a mysterious jump occurs. People teaching more advanced subjects, like quantum field theory, condensed matter physics, or quantum optics, start “imposing canonical commutation relations” on various field operators. Any student quickly realizes that “imposing canonical commutation relations” is extremely important, but, speaking personally, at the time I found it quite mysterious exactly what people meant by this phrase. It’s only in the past few years that I’ve obtained a satisfactory understanding of how this works, and understood why I had such trouble in the first place. These notes contain two parts. The first part is a short tutorial explaining the Fermionic canonical commutation relations ({CCRs}) from an elementary point of view: the different meanings they can have, both mathematical and physical, and what mathematical consequences they have. I concentrate more on the mathematical consequences than the physical in these notes, since having a good grasp of the former seems to make it relatively easy to appreciate the latter, but not so much vice versa. I may come back to the physical aspect in some later notes. The second part of the notes describes a beautiful application of the Fermionic {CCRs} known as the {JordanWigner} transform. This powerful tool allows us to map a system of interacting qubits onto an equivalent system of interacting Fermions, or, vice versa, to map a system of Fermions onto a system of qubits. Why is this kind of mapping interesting? It’s interesting because it means that anything we understand about one type of system (e.g., Fermions) can be immediately applied to learn something about the other type of system (e.g., qubits). I’ll describe an application of this idea, taking what appears to be a very complicated one-dimensional model of interacting spin12 particles, and showing that it is equivalent to a simple model of non-interacting Fermions. This enables us to solve for the energy spectrum and eigenstates of the original Hamiltonian. This has, of course,}
+      \field{title}{The Fermionic canonical commutation relations and the Jordan-Wigner transform}
+      \field{urlday}{19}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Nielsen - 2005 - The Fermionic canonical commutation relations and .pdf:C\:\\Users\\stepa\\Zotero\\storage\\R7GRKMXG\\Nielsen - 2005 - The Fermionic canonical commutation relations and .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.semanticscholar.org/paper/The-Fermionic-canonical-commutation-relations-and-Nielsen/18341dd1f056fdcad2ebf4ea2df59db522e041f6
+      \endverb
+      \verb{url}
+      \verb https://www.semanticscholar.org/paper/The-Fermionic-canonical-commutation-relations-and-Nielsen/18341dd1f056fdcad2ebf4ea2df59db522e041f6
+      \endverb
+    \endentry
+    \entry{tazi_folded_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=20d3661a9d02e2aa22d130e6fbb12a90}{%
+           family={Tazi},
+           familyi={T\bibinitperiod},
+           given={Lila\bibnamedelima Cadi},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=6bac221b31ce776b9d19c67a9fb0739d}{%
+           family={Thom},
+           familyi={T\bibinitperiod},
+           given={Alex\bibnamedelimb J.\bibnamedelimi W.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{5592cc99dcd7d9fdd96f39c306790261}
+      \strng{fullhash}{5592cc99dcd7d9fdd96f39c306790261}
+      \strng{bibnamehash}{5592cc99dcd7d9fdd96f39c306790261}
+      \strng{authorbibnamehash}{5592cc99dcd7d9fdd96f39c306790261}
+      \strng{authornamehash}{5592cc99dcd7d9fdd96f39c306790261}
+      \strng{authorfullhash}{5592cc99dcd7d9fdd96f39c306790261}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The recent developments of quantum computing present potential novel pathways for quantum chemistry, as the increased computational power of quantum computers could be harnessed to naturally encode and solve electronic structure problems. Theoretically exact quantum algorithms for chemistry have been proposed (e.g. Quantum Phase Estimation) but the limited capabilities of current noisy intermediate scale quantum devices ({NISQ}) motivated the development of less demanding hybrid algorithms. In this context, the Variational Quantum Eigensolver ({VQE}) algorithm was successfully introduced as an effective method to compute the ground state energy of small molecules. The current study investigates the Folded Spectrum ({FS}) method as an extension to the {VQE} algorithm for the computation of molecular excited states. It provides the possibility of directly computing excited states around a selected target energy, using the same ansatz as for the ground state calculation. Inspired by the variance-based methods from the Quantum Monte Carlo literature, the {FS} method minimizes the energy variance, thus requiring a computationally expensive squared Hamiltonian. We alleviate this potentially poor scaling by employing a Pauli grouping procedure, identifying sets of commuting Pauli strings that can be evaluated simultaneously. This allows for a significant reduction of the computational cost. We apply the {FS}-{VQE} method to small molecules (H\$\_2\$,{LiH}), obtaining all electronic excited states with chemical accuracy on ideal quantum simulators.}
+      \field{day}{26}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1549-9618, 1549-9626}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{month}{3}
+      \field{number}{6}
+      \field{shortjournal}{J. Chem. Theory Comput.}
+      \field{shorttitle}{Folded Spectrum {VQE}}
+      \field{title}{Folded Spectrum {VQE} : A quantum computing method for the calculation of molecular excited states}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{20}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2491\bibrangedash 2504}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.3c01378
+      \endverb
+      \verb{eprint}
+      \verb 2305.04783 [physics, physics:quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\9D26WD6W\\Tazi and Thom - 2024 - Folded Spectrum VQE A quantum computing method f.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\8S7Q9I8M\\2305.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.04783
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.04783
+      \endverb
+      \keyw{Physics - Chemical Physics,Quantum Physics}
+    \endentry
+    \entry{stechly_introduction_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ea262dbbdf6765a131a929ba7d1623ba}{%
+           family={Stęchły},
+           familyi={S\bibinitperiod},
+           given={Michał},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \strng{fullhash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \strng{bibnamehash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \strng{authorbibnamehash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \strng{authornamehash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \strng{authorfullhash}{ea262dbbdf6765a131a929ba7d1623ba}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document is a pdf version of the series of blogposts about variational quantum algorithms ({VQA}) I originally posted on my blog Musty Thoughts. It provides an explanation of the basic variational algorithms, such as Variational Quantum Eigensolver ({VQE}) and Quantum Approximate Optimization Algorithm ({QAOA}), as well as a more general framework for {VQAs}. It also describes some more advanced techniques that can be used to make these algorithms more efficient, as well as the challenges associated with using them.}
+      \field{day}{24}
+      \field{eprinttype}{arxiv}
+      \field{month}{2}
+      \field{number}{{arXiv}:2402.15879}
+      \field{title}{Introduction to Variational Quantum Algorithms}
+      \field{urlday}{19}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2402.15879
+      \endverb
+      \verb{eprint}
+      \verb 2402.15879 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\3SNBPI49\\Stęchły - 2024 - Introduction to Variational Quantum Algorithms.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\77ZCPBKC\\2402.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2402.15879
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2402.15879
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{qiskitextbook2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a1df260ce0e24689daaaf4bf30cb5c16}{%
+           family={authors},
+           familyi={a\bibinitperiod},
+           prefix={various},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Github}%
+      }
+      \strng{namehash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \strng{fullhash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \strng{bibnamehash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \strng{authorbibnamehash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \strng{authornamehash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \strng{authorfullhash}{a1df260ce0e24689daaaf4bf30cb5c16}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Qiskit Textbook}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://github.com/Qiskit/textbook
+      \endverb
+      \verb{url}
+      \verb https://github.com/Qiskit/textbook
+      \endverb
+    \endentry
+    \entry{gatesIMG}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b645c505dbc1a34b1e3598a2876944e3}{%
+           family={Rxtreme},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wikimedia Commons}%
+      }
+      \strng{namehash}{b645c505dbc1a34b1e3598a2876944e3}
+      \strng{fullhash}{b645c505dbc1a34b1e3598a2876944e3}
+      \strng{bibnamehash}{b645c505dbc1a34b1e3598a2876944e3}
+      \strng{authorbibnamehash}{b645c505dbc1a34b1e3598a2876944e3}
+      \strng{authornamehash}{b645c505dbc1a34b1e3598a2876944e3}
+      \strng{authorfullhash}{b645c505dbc1a34b1e3598a2876944e3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Logic Gates}
+      \verb{urlraw}
+      \verb https://upload.wikimedia.org/wikipedia/commons/e/e0/Quantum_Logic_Gates.png
+      \endverb
+      \verb{url}
+      \verb https://upload.wikimedia.org/wikipedia/commons/e/e0/Quantum_Logic_Gates.png
+      \endverb
+    \endentry
+    \entry{liu2014three}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fda8a6476fa840f1f86a595e38f1212a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c15fbb129f48a3d5effbbcb2495e701e}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Tor Publishing Group}%
+      }
+      \strng{namehash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \strng{fullhash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \strng{bibnamehash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \strng{authorbibnamehash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \strng{authornamehash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \strng{authorfullhash}{d0961a65165b7a8b599ef2be0354b1f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780765377067}
+      \field{title}{The Three-Body Problem}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.cz/books?id=QxbFBAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.cz/books?id=QxbFBAAAQBAJ
+      \endverb
+    \endentry
+    \entry{cerezo_variational_2021}{article}{}
+      \name{author}{11}{}{%
+        {{hash=cda5b62144e1a42caba2840a7224b769}{%
+           family={Cerezo},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=655d5e2bade9a389149f8beb0fc5c18c}{%
+           family={Arrasmith},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b10a34e16a501939634880eade0cec5e}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Simon\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c3acfc5e323c389790b828fbf6955f09}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Suguru},
+           giveni={S\bibinitperiod}}}%
+        {{hash=569711c363027fed98622c62cda54209}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={Keisuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=80dde347ecbddac8ca3ca422033ac88b}{%
+           family={Mitarai},
+           familyi={M\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=001b5a60b43cad93e93a32a46ae0c874}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4a995a4c6263a9857f548527d6fff0c5}{%
+           family={Cincio},
+           familyi={C\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d10bd053b9868d0af6fa53be761e3350}{%
+           family={Coles},
+           familyi={C\bibinitperiod},
+           given={Patrick\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeb54beafe59128c13a6651991958563}
+      \strng{fullhash}{aeb54beafe59128c13a6651991958563}
+      \strng{bibnamehash}{aeb54beafe59128c13a6651991958563}
+      \strng{authorbibnamehash}{aeb54beafe59128c13a6651991958563}
+      \strng{authornamehash}{aeb54beafe59128c13a6651991958563}
+      \strng{authorfullhash}{aeb54beafe59128c13a6651991958563}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Applications such as simulating complicated quantum systems or solving large-scale linear algebra problems are very challenging for classical computers due to the extremely high computational cost. Quantum computers promise a solution, although fault-tolerant quantum computers will likely not be available in the near future. Current quantum devices have serious constraints, including limited numbers of qubits and noise processes that limit circuit depth. Variational Quantum Algorithms ({VQAs}), which use a classical optimizer to train a parametrized quantum circuit, have emerged as a leading strategy to address these constraints. {VQAs} have now been proposed for essentially all applications that researchers have envisioned for quantum computers, and they appear to the best hope for obtaining quantum advantage. Nevertheless, challenges remain including the trainability, accuracy, and efficiency of {VQAs}. Here we overview the field of {VQAs}, discuss strategies to overcome their challenges, and highlight the exciting prospects for using them to obtain quantum advantage.}
+      \field{day}{12}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2522-5820}
+      \field{journaltitle}{Nature Reviews Physics}
+      \field{month}{8}
+      \field{number}{9}
+      \field{shortjournal}{Nat Rev Phys}
+      \field{title}{Variational Quantum Algorithms}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{625\bibrangedash 644}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1038/s42254-021-00348-9
+      \endverb
+      \verb{eprint}
+      \verb 2012.09265 [quant-ph, stat]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\NXLJ9SR5\\Cerezo et al. - 2021 - Variational Quantum Algorithms.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\BFMB7X45\\2012.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2012.09265
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2012.09265
+      \endverb
+      \keyw{Computer Science - Machine Learning,Quantum Physics,Statistics - Machine Learning}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
