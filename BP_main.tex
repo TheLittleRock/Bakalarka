@@ -3,6 +3,8 @@
 \documentclass[11pt,oneside,czech]{book}
 \usepackage{BP}
 
+\pgfplotsset{compat=1.18}
+
 \begin{document}
 \pagenumbering{roman}
 \mytitlepage
@@ -340,6 +342,8 @@ Obvody zakreslujeme pomocí diagramů, viz např. Obr. \ref{fig:bell_states}. Ob
 
 \mk{u obrazku doporucuji vzdy nastavit [htb] za {figure}}
 
+\subsection{Parametrizované obvody}
+
 \section{Měření na kvantovém počítači} \label{sec:measurement}
 \todo{V závislosti na definici pojmu informace lze stav qbitu interpretovat i tak, že jeho pomocí lze kódovat nekonečně množství informace. To však nelze z qbitu žádným způsobem extrahovat, jelikož měřením lze získat pouze některý ze stavů výpočetní báze. Měřením systém navíc zkolabuje do naměřeného stavu.}
 
@@ -534,15 +538,20 @@ Střední hodnota pozorovatelné $\sigma_x$ ve stavu $\ket{\psi}$ tedy odpovíd�
 \section{QAOA}
 \todo{Stručně popsat algoritmus. Moc nezabíhat do detailů. Zmínit, že je vhodné nejprve přečíst podrobný popis VQE a pak se vrátit k QAOA - lepší kontext a pochopení algoritmu.}
 \section{VQE}
-\todo{Úvodni kecy, na kvantovém počítači simulujeme stav systému...kvan. počítač roste lineárně s počtem částic. Jsme ale v NISQ éře, tak využijeme k simulaci stavu a poté utečeme do klasicého počítače.}
 
-\todo{Variational Quantum Eigensolver (VQE) [1] is a quantum algorithm that is a leading contender, if not the top contender, for demonstrating a practical quantum advantage on near-term machines. Unlike traditional quantum algorithms, which have extremely high quantum requirements in terms of gate counts and qubit lifetimes, VQE is feasible with modest quantum resources that are already available on current quantum computers. It attains a lower quantum resource cost in part by structuring computation over a large number of subproblems, each of which can be performed on a quantum computer with modest capabilities. While the low quantum }
+Mnoho, nejen fyzikálních problémů, lze převést na hledání vlastních čísel a vektorů nějakého operátoru. Tento typ problémů je řešitelný pomocí algoritmu nazývaného \textit{Quantum Phase Estimation} \textit{(QPE)}. Tento algoritmus umožňuje získat odhad vlastích hodnot unitárních operátorů (respektive jejich fázi na komplexní jednotkové kružnici). Je založen na QFT (\todo{buď zkratku rozepsat zde nebo dříve}), a tak přináší až exponenciální zrychlení ve srovnání s klasickými algoritmy. QPE je teoreticky dobře popsaný \cite{kitaev_quantum_1995} \cite{nielsen_quantum_2010}, avšak k praktické implementaci vyžaduje kvantové počítače s nízkou chybovostí, které nejsme schopni nyní dosáhnout \cite{mohammadbagherpoor_improved_2019}. Vyvstává tak otázka, zda lze k řešení problému vlastních čísel nějakým způsobem využít dnešních kvantových počítačů, a případně i dosáhnout nějakých výhod vůči klasickým výpočetním metodám. 
 
-Vychází z tzv. variačního principu:
+Možné řešení této otázky poskytuje algoritmus nazývaný \textit{Variational quantum eigensolver}, zkráceně \textit{VQE}. Jedná se o tzv. hybridní algoritmus, tedy algoritmus kombinující užití klasických a kvantových počítačů. Je realizovatelný i na NISQ počítačích a předpokládá se, že by v blízké době mohl dosáhnout kvantové výhody. VQE patří k relativně mladým algoritmům, první popis byl navržen v roce 2014 \cite{peruzzo_variational_2014}, jeho rozšíření a hlubší teoretický popis pak v roce 2016 \cite{mcclean_theory_2016}. Je tak momentálně aktivně diskutovaným tématem s množstvím publikací (viz např. reference v článku \cite{tilly_variational_2022}, či \cite{tazi_folded_2024}). Je založen na tzv.\textit{variačním principu} kvantové mechaniky.
+
+%\todo{Úvodni kecy, na kvantovém počítači simulujeme stav systému...kvan. počítač roste lineárně s počtem částic. Jsme ale v NISQ éře, tak využijeme k simulaci stavu a poté utečeme do klasicého počítače.}
+
+%\todo{Variational Quantum Eigensolver (VQE) [1] is a quantum algorithm that is a leading contender, if not the top contender, for demonstrating a practical quantum advantage on near-term machines. Unlike traditional quantum algorithms, which have extremely high quantum requirements in terms of gate counts and qubit lifetimes, VQE is feasible with modest quantum resources that are already available on current quantum computers. It attains a lower quantum resource cost in part by structuring computation over a large number of subproblems, each of which can be performed on a quantum computer with modest capabilities. While the low quantum }
+
+
 \subsection{Variační princip}
-Variační princip kvantové mechaniky říká, že střední hodnota pozorovatelné je vždy větší nebo rovna nejmenší vlastní hodnotě této pozorovatelné. To lze speciálně aplikovat na případ energie systému. 
+Variační princip kvantové mechaniky říká, že střední hodnota pozorovatelné je vždy větší nebo rovna nejmenší vlastní hodnotě této pozorovatelné. Toto tvrzení lze využít k navržení iterativního algoritmu pro získání přibližné hodnoty této nejnižší vlastní hodnoty. To lze speciálně aplikovat na případ energie systému \cite{shankar_principles_1994}. 
 
-Mějme Hamiltonián $\hat{H}$ (či nějakou jinou pozorovatelnou), jeho spektrální rozvoj má následující tvar:
+Mějme Hamiltonián $\hat{H}$ (či nějakou jinou pozorovatelnou). Důležitým předpokladem je diagonalizovatelnost tohoto operátoru, jeho spektrální rozvoj má pak následující tvar:
 
 \begin{equation}
 \hat{H} = \sum_{i=0}^{N-1} E_i \p{i},
@@ -580,16 +589,28 @@ Hledání základního stavu operátoru $\hat{\mathcal{H}}$ s nejmenším vlastn
 \min_{\vec\theta} \langle \psi(\vec\theta)|\hat{\mathcal{H}}|\psi(\vec\theta)\rangle \geq E_0.
 \end{equation}
 
+VQE také řeší toto optimalizační schéma. Simulace stavu $\psi(\vec\theta)$ a změření $\hat{\mathcal{H}}$ v tomto stavu probíhá na kvantovém počítači. Následná optimalizace, tj. výpočet nové sady parametrů $\vec \theta$ je pak provedena na počítači klasickém.  
+
+
 
 \subsection{Quantum phase estimation}
 Popsat stručně algoritmus, proč v blízké době asi nebude (jsme pořád v NISQ éře :-( ) -> motivace pro VQE. 
 Nastínit, že ve VQE kvantový počítač pouze pro reprezentaci Hamiltoniánu a jeho měření - jakmile můžeme, tak utečeme ke klasické části algoritmu.
 \subsection{Aplikace VQE}
+\cite{bhoy_shell-model_2024}, \cite{kiss_quantum_2022}
 Fyzikální, Chemické, Matematické, Finance, Doprava - ideálně dohledat články a tady je oreferencovat.
 
 \chapter{VQE}
 
-V této kapitole je důkladně popsán základ algoritmu VQE. Nejprve je diskutován algoritmus jako celek. Následně, v jednotlivých podkapitolách jsou rozebrány důkladně jednotlivé součásti algoritmu. Prezentované členění algoritmu je převzato z \cite{tilly_variational_2022}. Na tento přehledný a obsáhlý souhrnný článek je také doporučen čtenáři k dalšímu studiu. Některé alternativy, či rozšíření algoritmu jsou vysvětleny pouze stručně s odkazem na vhodnou literaturu. 
+V této kapitole je důkladně popsán základ algoritmu VQE. Nejprve je diskutován algoritmus jako celek. Následně, v jednotlivých podkapitolách jsou rozebrány důkladně jednotlivé součásti algoritmu. Prezentované členění algoritmu je převzato z \cite{tilly_variational_2022}. Na tento přehledný a obsáhlý souhrnný článek je také doporučen čtenáři k dalšímu studiu. Některé alternativy, či rozšíření algoritmu jsou vysvětleny pouze stručně s odkazem na vhodnou literaturu. Popis je zde zformulován pro Hamiltonián, namísto Hamiltoniánu však může být i libovolná jiná pozorovatelná. 
+
+Jak již bylo nastíněno v předchozí kapitole, VQE je hybridní algoritmus, který slouží k nalezení horní závory nejnižší vlastní hodnoty pozorovatelné. Tento odhad je iterativně zlepšován. 
+
+Nechť $\hat{\mathcal{H}}$ je Hamiltonián systému, jehož základní stav je úkolem nalézt. Mějme dále prostor stavů tohoto systému parametrizován pomocí souboru parametrů $\vec \theta$ a odhad základího stavu s parametry $\vec \theta_0$. V jedné iteraci VQE proběhne výpočet střední hodnoty $\hat{\mathcal{H}}$ v stavu s parametry $\vec \theta_0$, následně je použita nějaká klasická optimalizační metoda, která nalezne novou sadu parametrů $\vec \theta_1$, pro níž je střední hodnota $\hat{\mathcal{H}}$ nižší a stav daný těmito parametry tedy lépe aproximuje základní stav. Pro výpočet nových parametrů je třeba určit očekávanou hodnotu $\hat{\mathcal{H}}$ i pro parametry v okolí $\vec \theta_0$, k čemuž je také použit kvantový počítač. Získaná sada parametrů $\vec \theta_1$ je následně užita v další iteraci jako prvotní odhad. VQE je tudíž heuristický algoritmus, není vždy garantováno dosažení globálního minima v prostoru optimalizovaných parametrů a tedy získání správného výsledku.  
+
+Motivaci k užití kvantového počítače pro reprezentaci stavu a měření Hamiltoniánu v tomto stavu lze nahlédnout na jednoduchém příkladu. Mějme soustavu $N$ částic, z nichž každá má $2$ vlastní stavy, například částice se spinem $\sfrac{1}{2}$. Jedna částice je tedy popsána dvoudimenzionálním Hilbertovým prostorem. Soustava $N$ částic bude pak popsána tenzorovým součinem těchto $2$D prostorů. Jednu částici v tomto případě lze popsat pomocí jednoho qbitu. Pro popis $N$ částic tak bude třeba $N$ qbitů. Avšak Hilbertův prostor popisující soustavu $N$ částic bude $2^N$-dimenzionální. Při popisu na klasickém počítači by tedy bylo třeba pro kompletní popis systému $2^N$ amplitud, tedy se jedná o problém s exponenciální náročností. Jednou s největších výhod VQE tak je škálovatelnost vůči velikosti systému.
+
+VQE však nepřináší exponenciální výhodu. Důvodem je fakt, že Hamiltonián musí být nejprve rozložen na součet tzv. \textit{Pauliho řetězců} jejichž počet je řádu $\mathcal{O}(poly(N))$. Důvod k tomuto rozkladu bude popsán níže. K určení očekávané hodnoty Hamiltoniánu bude tedy s užitím kvantového počítače třeba $\mathcal{O}(poly(N))$ operací, při výpočtu na klasickém počítači by oblo operací třeba $\mathcal{O}(2^N)$. VQE tedy může mít až polynomiální výhodu.
 
     \begin{figure}[h]
         \centering
@@ -598,11 +619,60 @@ V této kapitole je důkladně popsán základ algoritmu VQE. Nejprve je diskuto
         \label{fig:VQE_diagram}
     \end{figure}
 \section{Popis algoritmu}
-Jak již bylo 
-\section{Ansatz}
+V této části bude VQE rozdělen na několik částí, které budou dále důkladně rozebrány. Názorné schéma algoritmu lze nalézt na Obr. \ref{fig:VQE_diagram}. Nejprve je třeba vyjádřit řešený problém pomocí Hamiltoniánu. Ten je pak enkódován pomocí Pauliho operátorů tak, aby mohl být reprezentován na kvantovém počítači. Následně je vytvořen parametrizovaný kvantový obvod, tzv. \textit{ansatz}, který z výchozícho stavu (např. $\ket{0}^{\otimes N}$) vytvoří parametrizovaný stav, který alespoň částečně pokrývá prostor zkoumaného Hamiltoniánu. V tomto parametrizovaném stavu bude probíhat měření Hamitoniánu realizované rotací do báze ve které je Hamiltonián diagonální a opakovaným projekčním měřením. Určená očekávaná hodnota je pak využita k získání nových parametrů ansatzu pomocí klasického \textit{optimizéru}. Následuje stručný popis částí diagramu na Obr. \ref{fig:VQE_diagram}.
+\begin{itemize}
+    \item \textbf{Reprezentace Hamiltoniánu:} Problém je třeba nejprve formulovat jako úlohu na hledání základního stavu. Dále je třeba zvolit vhodnou bázi, ve které bude vyjádřen Hamiltonián zkoumaného systému. Častou volbou pro sféricky symertické systémy bývají například bazické funkce tvořené kulovými (někdy nazývané sférické harmonické) funkcemi násobené radiálními funkcemi. Pro více částicové systémy bývá báze často vytvořena z jednočásticových bazických funkcí. Další vlastností, kterou musí reprezentace reflektovat je symetrie, resp. antisymetrie systému vůči výměně částic. Například systém fermionů (elektronový obal atomu, nukleony v jádře atd.) musí být vůči záměně dvou částic antisymetrický. Existují de facto dvě možnosti, jak toho dosáhnout. První z nich je tuto antisymetrii vynutit ve vlnových funkcích, druhou možností je ji realizovat definicí operátorů. Tyto dvě reprezentace se popořadě nazývají první a druhé kvantování, tyto názvy mají historický původ. Pro VQE bývá Hamiltonián obvykle reprezentován pomocí druhého kvantování. Hamiltonián je tak vyjádřen pomocí kreačních operátorů $\hat a^\dag_j$ a anihilačních operátorů $\hat a_j$, jejichž působení odpovídá přidání respektive odebrání částice v $j$-tém stavu (tj. stavu popsaném $j$-tou bazickou funkcí). Antiymetrie je pak vynucena antikomutačními relacemi těchto operátorů.
+    \item \textbf{Enkódobání Hamiltoniánu:} Dále je třeba Hamiltonián nějakým způsobem enkódovat tak, aby jej bylo možno měřit na kvantovém počítači. Toho je docíleno vyjádřením hamiltoniánu pomocí Pauliho řetězců pro $N$ qbitů $\hat{P_i} \in \{ I, X, Y, Z \} ^{\otimes N}$. To je možné mimo jiné proto, že Pauliho operátory spolu s jednotkou tvoří bázi operátorů na daném prostoru. Hamiltonián má tak tedy podobu lineární kombinace $\hat P_i$ Jednotlivé Pauliho řetězce pak lze vyjádřit jako kvantové obvody. V prvním kvantování je mapování provedeno přímou ekvivalencí bazických stavů a výpočetní bazí kvantového počítače. Projekční operátory tak jsou vyjádřeny pomocí Pauliho operátorů. V druhém kvantování jsou kreační a anihilační operátory zobrazeny na kombinace Pauliho operátorů, a to takovým způsobem, aby byla zachována případná antisymetrie fermionických systémů. Příklady dvou takových zobrazení jsou Jordan-Wigner \cite{jordan_uber_1928} a Bravyi-Kitaev \cite{bravyi_fermionic_2002} transformace, které jsou zároveň nejpoužívanějšími.
+    \item \textbf{Strategie měření:} Měření operátorů (viz kapitola \ref{sec:mereni_operatoru}) probíhá rotací stavů do báze, ve které je operátor diagonální. Hamiltonián je ve VQE vyjádřen pomocí Pauliho operátorů, pro které jsou diagonalizace známé. Linearita střední hodnoty umožňuje rozdělit měření střední hodnoty Hamiltoniánu na měření středních hodnot Pauliho řetězců z rozkladu v předchozím kroku. Tato rotace do báze je realizována kvantovým obvodem (viz \ref{table:pauli_diagonal}), kterým bude transformován stav ve kterém probíhá měření. Opakovaným projekčním měřením tohoto zrotovaného stavu je získána pravděpodobnostní distribuce, a z ní již lze určit očekávané hodnoty Pauliho řetězců. Měření lze dále zefektivnit, některé řetězce jsou totiž diagonalizovatelné současně a jejich střední hodnotu lze určit pomocí stejné pravděpodobnostní distribuce. Takové řetězce budou vzájemně komutovat, a tak lze využít vlastností Lieovy algebry Pauliho matic k jejich identifikaci. Tato seskupení jsou netriviální a existuje jich mnoho, identifikace optimálního seskupení je předmětem současného výzkumu \cite{gokhale_minimizing_2019}, \cite{huggins_efficient_2021}, \cite{hamamura_efficient_2020}, \cite{gokhale_on3_2019}.
+    \item \textbf{Ansatz:} Hlavní podstatou VQE je procházení Hilbertova prostoru Hamiltoniánu pomocí parametrizovaných stavů. Optimalizací parametrů je pak nalezeno (přibližné) minimum střední hodnoty Hamiltoniánu. Toto minimum pak představuje odhad enerige základního stavu, jehož odhad je získán dosazením parametrů pro nalezené minimum. Kvantový obvod, který tento stav připravuje je nazýván \textit{ansatz}. Ansatz do velké míry ovlivňuje náročnost a přesnost VQE. Kvalitu ansatzu vyjadřuje to, jak dobře dokáže obsáhnout Hilbertův prostor zkoumaného Hamiltoniánu a to, jak dobře trénovatelný (tj. jak rychle, jak přesně a zda vůbec lze nalézt minimum). Pokrytí stavového prostoru by mělo být dostatečné, aby bylo garantováno, že bude dobrým modelem základního stavu, zároveň však musí být mohutnost ansatzu v souladu s možnostmi současných kvantových počítačů a optimalizačních metod. V praxi může být volba ansatzu motivována buď konkrétním fyzikálním problémem, či hardwarem kvantového počítače. V první možnosti ansatz zaveden v souladu se známými stavy Hamiltoniánu. V druhé možnosti je zase navržen tak, aby jej bylo možné optimálně realizovat na daném kvantovém hardwaru.
+    \item \textbf{Optimalizace parametrů:} V závěru jedné iterace je třeba určit parametry ansatzu pro další iteraci.
+    Optimalizace parametrů je již čistě klasická část VQE. Výběr optimizéru nicméně značně ovlivňuje přesnost, úspěšnost i náročnost algoritmu. Optimizér udává, kolik měření je nutno v jedné iteraci provést a také, kolik iterací je třeba k dosažení konvergence. Optimizéry bývají často navrženy specificky tak, aby kontrovaly různé optimalizační problémy, například sedla v optimalizační krajině, či velké množství lokálních minim. Optimizérů existuje velké množství \cite{bonet-monroig_performance_2023} a správný výběr je esenciální pro efektivní fungování VQE.
+\end{itemize}
+
+
 \section{Enkódování Hamiltoniánu}
+Před řešením problému pomocí VQE je třeba nejprve formulovat Hamiltonián s tímto problémem spojený. Z principu korespondence lze v kvantové mechanice vyjádřit Hamiltonián analogicky s klasickou mechanikou \cite{shankar_principles_1994}. Tedy pro potenciál nezávislý na hybnostech jako součet kinetické a potenciální energie:
+\begin{equation}
+    \hat H = \hat T + \hat V,
+\end{equation}
+pro N částic má v souřadnicové reprezentaci operátor kinetické energie tvar:
+\begin{equation}
+    \hat T = \sum_{i=1}^{N} \frac{\hat p_i^2}{2m_i} = -\sum_{i=1}^{N} \frac{\hbar^2}{2m_i}\nabla^2.
+\end{equation}
+Potenciál je specifický pro každý systém a jeho správná volba je základem dobrého popisu. V tomto kroku často dochází k aproximacím, které zjednodušují řešení. Tyto aproximace mohou mít různou podobu. Například rozdělení Hamiltoniánu na součet několika členů, kde je interakce mezi těmito členy zanedbána. Příkladem je například Born-Oppenheimer aproximace pro molekulární Hamiltoniány \cite{born_zur_1927}, ve které je uvažována kinetická energie pouze elektronového obalu a potenciál je rozdělen na coloumbický interakční člen párů elektron-elektron a interakční člen párů elektron-nukleon. Je tak uvažována vždy pouze interakce dvou částic. Dále mohou být zahrnuty také spinové, vibrační či rotační členy.
+
+Další, velmi častou aproximací je nahrazení vzájemné interakce částic globálním potenciálem. Bývá používána například pro jaderné modely nebo dále rozebírané vektorové mezony. Z pohledu jedné částice tak inerakce s ostatními částicemi odpovídá uvěznění v potenciálové jámě. Potenciál bývá často sféricky symetrický a nejjednoduššími volbami jsou sféricky symetrická jáma, pole izotropního harmonického oscilátoru $V \propto r^2$ a analogie Coloumbického potenciálu $V \propto \tfrac{1}{r}$.
+
+\subsection{Částice ve sféricky symetrickém potenciálu}
+Sférická symetrie umožňuje značné zjednodušení řešení Schrödingeroy rovnice. Křešení lze postupovat vícero způsoby například čistě matematicky, užitím separace proměnných, nebo více fyzikálně, hledáním vlastních stavů úplné množiny pozorovatelných $\{ \hat L^2,\, \hat L_3,\ \hat H \}$. Hamiltonián je pak součtem radiální a úhlové části, výsledné vlnové funkce jsou zase součinem radiálně závislé a úhlově závislé části. Úhová část opdovídá vlastním stavům $\hat L^2$. Radiální část vlnové funkce je řešením jednodimenzionální schrödingerovy rovnice pro částici v efektivním potenciálu $\hat V_\mathrm{eff} = \hat V + \tfrac{\hbar^2 j(j+1)}{2mr^2}$, kde $\hat V$ je původní potenciál \cite{shankar_principles_1994}.
+
+\todo{Naznačit řešení, odkázat se na \cite{shankar_principles_1994}}
+\subsection{Nerozlišitelné částice}
+Kvantové částice stejného druhu jsou nerozlišitelné. Každá z nich tedy musí být popsána stejnou sadou vlnových funkcí řešících jednočásticovou Schrödingerovu rovnici. Společný stav systému více nerozlišitelných částic pak bude popsán tenzorovým součinem těchto jednočásticových stavů. Dle tzv. \textit{symetrizačního postulátu} je lze rozdělit do dvou skupin podle chování jejich společné vlnové funkce při záměně dvou částic. Vlnová funkce je symetrická pro \textit{bosony} a antisymetrická pro \textit{fermiony}. Je-li tedy $\ket{\psi}$ množina normalizovaných stavů pro jednu částici, platí pro dvě nerozlišitelné částice následující:
+\begin{equation}
+    \ket{\psi_1, \psi_2} = \xi \ket{\psi_2, \psi_1}, 
+\end{equation}
+kde $\xi = 1$ pro bosony a $\xi = -1$ pro fermiony. Společný stav takových dvou částic tedy musí mít tvar:
+\begin{equation}
+    \ket{\psi_1, \psi_2} = \frac{1}{\sqrt{2}}(\ket{\psi_1}\otimes\ket{\psi_2} + \xi \ket{\psi_2}\otimes\ket{\psi_1}),
+\end{equation}
+kde opět $\xi = 1$ pro bosony a $\xi = -1$ pro fermiony. Pro vlnovou funkci v poziční bázi platí:
+\begin{equation}
+    \psi(x_1,x_2) = \braket{x_1,x_2}{\psi_1, \psi_2} = \frac{1}{\sqrt{2}} (\braket{x_1}{\psi_1}\braket{x_2}{\psi_2} + \xi \braket{x_1}{\psi_2}\braket{x_2}{\psi_1})
+\end{equation}
+Společný stav pro $N$ nerozlišitelných částic má obecně tvar \cite{zhang_permanent_2022}:
+
+\begin{equation}
+\ket{\psi_1,\psi_2,\ldots \psi_N} = \sqrt{\frac{\prod_{i=0}^\infty n_i!}{N!}} \sum_{\mathcal{P}} \xi^{\tfrac{1}{2} \mathrm{sgn} (\mathcal{P})} \ket{\psi_{\mathcal{P}_1}} \otimes \ket{\psi_{\mathcal{P}_2}} \otimes \ldots \otimes \ket{\psi_{\mathcal{P}_N}},
+\label{eq:N_particle_state}
+\end{equation}
+kde $n_i$ představuje počet částic v daném stavu. Pro fermiony tedy $n_i \in \{ 0,\, 1 \}$, sumace probíhá přes všechny možné permutace a $\mathrm{sgn} (\mathcal{P})$ je znaménko dané permutace. V případě fermionů je tento společný stav $N$ částic znám jako tzv. \textit{Slaterův determinant}. Tento způsob vynucení (anti)symetrie definicí vlnové funkce bývá nazývaný \textit{první kvantování}. Alternativní popis, nazývaný\textit{druhé kvantování} (anti)symetrii vynucuje vhodnou definicí operátorů.
+
+\subsection{První kvantování}
+V prvním kvantování jsou stavy systému $N$ částic popsány pomocí definice (\ref{eq:N_particle_state}). 
+Mapování \cite{abrams_simulation_1997}
 \subsection{Druhé kvantování}
-Popisuje přepis Hamiltoniánu do tzv. notace obsazovacích čísel
+Popisuje přepis Hamiltoniánu do tzv. notace obsazovacích čísel. 
 
 Mějme $N$ částic. $n_i$ odpovídá počtu částic ve stavu $i$. Libovolný stav $\mathcal{F}^N$ lze zapsat následující superpozicí
 \begin{equation}
@@ -639,7 +709,11 @@ Zavádíme operátor počtu částic
     \hat{n}_\lambda = \hat{a}^\dag_\lambda\hat{a}_\lambda
 \end{equation}
 
+\todo{-Jordan-Wigner \cite{jordan_uber_1928}, Bravyi-Kitaev \cite{bravyi_fermionic_2002}}
+
 \subsection{Jordan-Wiegnerova transformace}
+\section{Ansatz}
+\todo{citace - \cite{sim_expressibility_2019}}
 \section{Měření}
 \subsection{Pauliho řetězce}
 \subsection{Diagonalizace}
@@ -647,8 +721,12 @@ Zavádíme operátor počtu částic
 \label{sec:pauli_grouping}
 \section{Optimizéry}
 \subsection{Gradientní}
+-Adam \cite{kingma_adam_2017}
 \subsection{Negradientní}
+-Nelder-Mead \cite{nelder_simplex_1965}, Powel \cite{powell_efficient_1964}, rotosolve \cite{ostaszewski_structure_2021}
 \section{Modifikace a budoucnost}
+\subsection{Paralelizace}
+\todo{The potential for parallelization of the VQE was already identified in the initial paper by Peruzzo et al. [37] and subsequently mentioned in many VQE papers, although an in-depth study is lacking. Parallelism is however critical for the viability of the method. Parallelism of the VQE offers a direct way to convert runtime cost into hardware cost by splitting the shots required onto different sets of qubits (which can be arranged in different threads on a single quantum computer, or multiple, disconnected quantum computers). To illustrate this point, we adapt the estimates presented in Table 2 assuming that perfect parallelization is possible, and present the results in Table 3. It is clear that parallelization will be a critical part of any future success of the VQE method. Broad availability of quantum computers with increasing number of qubits could therefore significantly speed-up the VQE process, however there are significant caveats to that. One key observation is that full parallelization would require a number of quantum computers cores (or threads) that scales O(pN4/2), with p the number of parameters in the ansatz. This could clearly be a prohibitive number for large computation given the current state of hardware technology, and it is possible that fault-tolerant technology could arrive before we are able to produce such large quantities of devices. Even if it was possible to build large quantities of quantum computers, there are many caveats to the potential of parallelization for the VQE. First, as it is the case for conventional parallel computing, parallel quantum computing will suffer from communication overheads. These overheads are the computational cost of coordinating the parallel tasks, which can include the likes of synchronization cost, data aggregation and communication (possibly latency if the different sets of qubits are connected through the cloud). Second, parallelization could result in higher noise levels. We note two possible sources of additional noise: (1) if parallelization is done on multi-threaded quantum computers, there is higher 2 J. Tilly, H. Chen, S. Cao et al. Physics Reports 986 (2022) 1–128 chance of cross-talk between qubits; (2) variational algorithms are considered to be somewhat noise resilient as they can learn the systematic biases of a given hardware [38,94] — if the algorithm is run on multiple quantum computers these noise resilient effects may disappear, as systematic biases on one set of qubits, which differs on another, may no longer be learned through the variational process.}
 \subsection{Excitované stavy}
 \subsection{Folded Spectrum VQE}
 \subsection{Cascaded VQE}

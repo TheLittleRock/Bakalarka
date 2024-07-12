@@ -749,6 +749,1231 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Quantum Physics,Statistics - Machine Learning}
     \endentry
+    \entry{kitaev_quantum_1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Yu},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{fullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{bibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a polynomial quantum algorithm for the Abelian stabilizer problem which includes both factoring and the discrete logarithm. Thus we extend famous Shor's results. Our method is based on a procedure for measuring an eigenvalue of a unitary operator. Another application of this procedure is a polynomial quantum Fourier transform algorithm for an arbitrary finite Abelian group. The paper also contains a rather detailed introduction to the theory of quantum computation.}
+      \field{day}{20}
+      \field{eprinttype}{arxiv}
+      \field{month}{11}
+      \field{number}{{arXiv}:quant-ph/9511026}
+      \field{title}{Quantum measurements and the Abelian Stabilizer Problem}
+      \field{urlday}{8}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.quant-ph/9511026
+      \endverb
+      \verb{eprint}
+      \verb quant-ph/9511026
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\I7VIX9YZ\\Kitaev - 1995 - Quantum measurements and the Abelian Stabilizer Pr.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\GCJ7R2WF\\9511026.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/quant-ph/9511026
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/quant-ph/9511026
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{mohammadbagherpoor_improved_2019}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9eb8bf0e582a3dd21351c9c9b14a387c}{%
+           family={Mohammadbagherpoor},
+           familyi={M\bibinitperiod},
+           given={Hamed},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b281d62881b82891a4ce333186623f6}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Young-Hyun},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=062057fa0446dd599c63c23e222e3fc8}{%
+           family={Dreher},
+           familyi={D\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ba8aca5a25ffa2876d0c46132b8518fe}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7fa000b73145093074d7d46e64d829f7}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Xianqing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b803837b700db9b7a6c85748d6d69bd1}{%
+           family={Rindos},
+           familyi={R\bibinitperiod},
+           given={Andy\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \strng{fullhash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \strng{bibnamehash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \strng{authorbibnamehash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \strng{authornamehash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \strng{authorfullhash}{7b91da6ae8ad4ae21768650f26cc1b9c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum phase estimation ({QPE}) is one of the core algorithms for quantum computing. It has been extensively studied and applied in a variety of quantum applications such as the Shor's factoring algorithm, quantum sampling algorithms and the calculation of the eigenvalues of unitary matrices. The {QPE} algorithm has been combined with Kitaev's algorithm and the inverse quantum Fourier transform ({IQFT}) which are utilized as a fundamental component of such quantum algorithms. In this paper, we explore the computational challenges of implementing {QPE} algorithms on noisy intermediate-scale quantum ({NISQ}) machines using the {IBM} Q Experience (e.g., the {IBMQX}4, 5-qubit quantum computing hardware platform). Our experimental results indicate that the accuracy of finding the phase using these {QPE} algorithms is severely constrained by the {NISQ} computer's physical characteristics such as coherence time and error rates. To mitigate these physical limitations, we propose implementing a modified solution by reducing the number of controlled rotation gates and phase shift operations, thereby increasing the accuracy of the finding phase in near-term quantum computers.}
+      \field{day}{23}
+      \field{eprinttype}{arxiv}
+      \field{month}{10}
+      \field{number}{{arXiv}:1910.11696}
+      \field{title}{An Improved Implementation Approach for Quantum Phase Estimation on Quantum Computers}
+      \field{urlday}{8}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1910.11696
+      \endverb
+      \verb{eprint}
+      \verb 1910.11696 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\KLXYGU6C\\Mohammadbagherpoor et al. - 2019 - An Improved Implementation Approach for Quantum Ph.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\ZNIFSX2Q\\1910.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1910.11696
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1910.11696
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{shankar_principles_1994}{book}{}
+      \name{author}{1}{}{%
+        {{hash=da264ccf69a35c1d68643cdd7b991c43}{%
+           family={Shankar},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, {NY}}%
+      }
+      \list{publisher}{1}{%
+        {Springer {US}}%
+      }
+      \strng{namehash}{da264ccf69a35c1d68643cdd7b991c43}
+      \strng{fullhash}{da264ccf69a35c1d68643cdd7b991c43}
+      \strng{bibnamehash}{da264ccf69a35c1d68643cdd7b991c43}
+      \strng{authorbibnamehash}{da264ccf69a35c1d68643cdd7b991c43}
+      \strng{authornamehash}{da264ccf69a35c1d68643cdd7b991c43}
+      \strng{authorfullhash}{da264ccf69a35c1d68643cdd7b991c43}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4757-0578-2}
+      \field{langid}{english}
+      \field{title}{Principles of Quantum Mechanics}
+      \field{urlday}{11}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-1-4757-0576-8
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\stepa\\Zotero\\storage\\UNUJDJUG\\Shankar - 1994 - Principles of Quantum Mechanics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-1-4757-0576-8
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-1-4757-0576-8
+      \endverb
+      \keyw{classical mechanics,Degrees of freedom,Dirac equation,hydrogen atom,quantum mechanics,quantum theory,scattering,scattering theory}
+    \endentry
+    \entry{bhoy_shell-model_2024}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=9babe909e029aa5a4198ca1e868d2c29}{%
+           family={Bhoy},
+           familyi={B\bibinitperiod},
+           given={Bharti},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fe57d48c737caf87b1fcdf45d688e7ef}{%
+           family={Stevenson},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e3369f2a95a82060588d44227bf4c18c}
+      \strng{fullhash}{e3369f2a95a82060588d44227bf4c18c}
+      \strng{bibnamehash}{e3369f2a95a82060588d44227bf4c18c}
+      \strng{authorbibnamehash}{e3369f2a95a82060588d44227bf4c18c}
+      \strng{authornamehash}{e3369f2a95a82060588d44227bf4c18c}
+      \strng{authorfullhash}{e3369f2a95a82060588d44227bf4c18c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study presents a simulated quantum computing approach for the investigation into the shell-model energy levels of \${\textasciicircum}\{58\}\$Ni through the application of the variational eigensolver ({VQE}) method in combination with a problem-specific ansatz. The primary objective is to achieve a fully accurate low-lying energy spectrum of \${\textasciicircum}\{58\}\$Ni. The chosen isotope, \${\textasciicircum}\{58\}\$Ni is particularly interesting in nuclear physics through its role in astrophysical reactions while also being a simple but not-trivial nucleus for shell-model study, it being two particles outside a closed shell. Our ansatz, along with the {VQE} method are shown to be able to reproduce exact energy values for the ground state and first and second excited states. We compare a classical shell model code, the values obtained by diagonalization of the Hamiltonian after qubit mapping, and a noiseless simulated ansatz+{VQE} simulation. The exact agreement between classical and qubit-mapped diagonalisation shows the correctness of our method, and the high accuracy of the simulation means that the ansatz is suitable to allow a full reconstruction of the full nuclear wave function.}
+      \field{day}{29}
+      \field{eprinttype}{arxiv}
+      \field{month}{2}
+      \field{note}{version: 2}
+      \field{number}{{arXiv}:2402.15577}
+      \field{title}{Shell-model study of \${\textasciicircum}\{58\}\$Ni using quantum computing algorithm}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2402.15577
+      \endverb
+      \verb{eprint}
+      \verb 2402.15577 [nucl-th]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\HBYLE3ER\\Bhoy and Stevenson - 2024 - Shell-model study of \$^ 58 \$Ni using quantum compu.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\DM8WXFHL\\2402.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2402.15577
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2402.15577
+      \endverb
+      \keyw{Nuclear Theory}
+    \endentry
+    \entry{kiss_quantum_2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=f9c02694167a4df2e6917b8da70a1f8f}{%
+           family={Kiss},
+           familyi={K\bibinitperiod},
+           given={Oriel},
+           giveni={O\bibinitperiod}}}%
+        {{hash=f2dfb571aeb064a687368b8a5675ff87}{%
+           family={Grossi},
+           familyi={G\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=21e205ff9997d65c5a36774db059897c}{%
+           family={Lougovski},
+           familyi={L\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4b588c15be142f3897b3d5490536c750}{%
+           family={Sanchez},
+           familyi={S\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0bb8ee718da0595bb50492135195ace6}{%
+           family={Vallecorsa},
+           familyi={V\bibinitperiod},
+           given={Sofia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=20ac5ff03196a281dfcbae3455e78cb3}{%
+           family={Papenbrock},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2769ec77619ddffb271dc58e0744383}
+      \strng{fullhash}{e2769ec77619ddffb271dc58e0744383}
+      \strng{bibnamehash}{e2769ec77619ddffb271dc58e0744383}
+      \strng{authorbibnamehash}{e2769ec77619ddffb271dc58e0744383}
+      \strng{authornamehash}{e2769ec77619ddffb271dc58e0744383}
+      \strng{authorfullhash}{e2769ec77619ddffb271dc58e0744383}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The variational quantum eigensolver ({VQE}) is an algorithm to compute ground and excited state energy of quantum many-body systems. A key component of the algorithm and an active research area is the construction of a parametrized trial wavefunction -- a so called variational ansatz. The wavefunction parametrization should be expressive enough, i.e. represent the true eigenstate of a quantum system for some choice of parameter values. On the other hand, it should be trainable, i.e. the number of parameters should not grow exponentially with the size of the system. Here, we apply {VQE} to the problem of finding ground and excited state energies of the odd-odd nucleus \${\textasciicircum}6\$Li. We study the effects of ordering fermionic excitation operators in the unitary coupled clusters ansatz on the {VQE} algorithm convergence by using only operators preserving the \$J\_z\$ quantum number. The accuracy is improved by two order of magnitude in the case of descending order. We first compute optimal ansatz parameter values using a classical state-vector simulator with arbitrary measurement accuracy and then use those values to evaluate energy eigenstates of \${\textasciicircum}6\$Li on a superconducting quantum chip from {IBM}. We post-process the results by using error mitigation techniques and are able to reproduce the exact energy with an error of 3.8\% and 0.1\% for the ground state and for the first excited state of \${\textasciicircum}6\$Li, respectively.}
+      \field{day}{29}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2469-9985, 2469-9993}
+      \field{journaltitle}{Physical Review C}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev. C}
+      \field{title}{Quantum computing of the \${\textasciicircum}6\$Li nucleus via ordered unitary coupled clusters}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{106}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{034325}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevC.106.034325
+      \endverb
+      \verb{eprint}
+      \verb 2205.00864 [nucl-th]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\N7BIFTKW\\Kiss et al. - 2022 - Quantum computing of the \$^6\$Li nucleus via ordere.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\2AM9SWBV\\2205.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2205.00864
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2205.00864
+      \endverb
+      \keyw{Nuclear Theory}
+    \endentry
+    \entry{jordan_uber_1928}{article}{}
+      \name{author}{2}{}{%
+        {{hash=40ae7753d523c197cc915f02665378ef}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0f65f64e6050b36184863dbf3ec857c1}{%
+           family={Wigner},
+           familyi={W\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \strng{fullhash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \strng{bibnamehash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \strng{authorbibnamehash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \strng{authornamehash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \strng{authorfullhash}{9e1c4953beb1f5ddc0e4965ab47a6d93}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Die Arbeit enthält eine Fortsetzung der kürzlich von einem der Verfasser vorgelegten Note „Zur Quantenmechanik der Gasentartung“, deren Ergebnisse hier wesentlich erweitert werden. Es handelt sich darum, ein ideales oder nichtideales, dem Paulischen Äquivalenzverbot unterworfenes Gas zu beschreiben mit Begriffen, die keinen Bezug nehmen auf den abstrakten Koordinatenraum der Atomgesamtheit des Gases, sondern nur den gewöhnlichen dreidimensionalen Raum benutzen. Das wird ermöglicht durch die Darstellung des Gases vermittelst eines gequantelten dreidimensionalen Wellenfeldes, wobei die besonderen nichtkommutativen Multiplikationseigenschaften der Wellenamplitude gleichzeitig für die Existenz korpus-kularer Gasatome und für die Gültigkeit des Paulischen Äquivalenzverbots verantwortlich sind. Die Einzelheiten der Theorie besitzen enge Analogien zu der entsprechenden Theorie für Einsteinsche ideale oder nichtideale Gase, wie sie von Dirac, Klein und Jordan ausgeführt wurde.}
+      \field{day}{1}
+      \field{issn}{0044-3328}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{langid}{german}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Z. Physik}
+      \field{title}{Über das Paulische Äquivalenzverbot}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{47}
+      \field{year}{1928}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{631\bibrangedash 651}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/BF01331938
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\MACALUAN\\Jordan and Wigner - 1928 - Über das Paulische Äquivalenzverbot.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01331938
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01331938
+      \endverb
+    \endentry
+    \entry{bravyi_fermionic_2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \strng{fullhash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \strng{bibnamehash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \strng{authorbibnamehash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \strng{authornamehash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \strng{authorfullhash}{21fe5bd6b37d5a190648501f5ee3af7b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We define a model of quantum computation with local fermionic modes ({LFMs}) -- sites which can be either empty or occupied by a fermion. With the standard correspondence between the Foch space of \$m\$ {LFMs} and the Hilbert space of \$m\$ qubits, simulation of one fermionic gate takes \$O(m)\$ qubit gates and vice versa. We show that using different encodings, the simulation cost can be reduced to \$O({\textbackslash}log m)\$ and a constant, respectively. Nearest-neighbors fermionic gates on a graph of bounded degree can be simulated at a constant cost. A universal set of fermionic gates is found. We also study computation with Majorana fermions which are basically halves of {LFMs}. Some connection to qubit quantum codes is made.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{00034916}
+      \field{journaltitle}{Annals of Physics}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Annals of Physics}
+      \field{title}{Fermionic quantum computation}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{298}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{210\bibrangedash 226}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1006/aphy.2002.6254
+      \endverb
+      \verb{eprint}
+      \verb quant-ph/0003137
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\TYI4GADE\\Bravyi and Kitaev - 2002 - Fermionic quantum computation.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\HX53EIIK\\0003137.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/quant-ph/0003137
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/quant-ph/0003137
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{gokhale_minimizing_2019}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=f81b959a274cf858af12371d973186a4}{%
+           family={Gokhale},
+           familyi={G\bibinitperiod},
+           given={Pranav},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f082953cb70161b87a0869d90d9bb16a}{%
+           family={Angiuli},
+           familyi={A\bibinitperiod},
+           given={Olivia},
+           giveni={O\bibinitperiod}}}%
+        {{hash=42c19e7d8e4f58481c6b4e4d73a06715}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Yongshan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=63bbc5626b2af9fc59d7a7d1b49ef1eb}{%
+           family={Gui},
+           familyi={G\bibinitperiod},
+           given={Kaiwen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1adb469c4a0a4ad3b690a85068ae396a}{%
+           family={Tomesh},
+           familyi={T\bibinitperiod},
+           given={Teague},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d000a1b24e892d6c31367f83ed18564e}{%
+           family={Suchara},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=51a2ecd59392c7fa73fa8648cea933be}{%
+           family={Martonosi},
+           familyi={M\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3dc30ce8848da64646a981d48b5d2701}{%
+           family={Chong},
+           familyi={C\bibinitperiod},
+           given={Frederic\bibnamedelima T.},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \strng{fullhash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \strng{bibnamehash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \strng{authorbibnamehash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \strng{authornamehash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \strng{authorfullhash}{80109502c6ee6a4810ef8c5cd3d45733}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variational quantum eigensolver ({VQE}) is a promising algorithm suitable for near-term quantum machines. {VQE} aims to approximate the lowest eigenvalue of an exponentially sized matrix in polynomial time. It minimizes quantum resource requirements both by co-processing with a classical processor and by structuring computation into many subproblems. Each quantum subproblem involves a separate state preparation terminated by the measurement of one Pauli string. However, the number of such Pauli strings scales as \$N{\textasciicircum}4\$ for typical problems of interest--a daunting growth rate that poses a serious limitation for emerging applications such as quantum computational chemistry. We introduce a systematic technique for minimizing requisite state preparations by exploiting the simultaneous measurability of partitions of commuting Pauli strings. Our work encompasses algorithms for efficiently approximating a {MIN}-{COMMUTING}-{PARTITION}, as well as a synthesis tool for compiling simultaneous measurement circuits. For representative problems, we achieve 8-30x reductions in state preparations, with minimal overhead in measurement circuit cost. We demonstrate experimental validation of our techniques by estimating the ground state energy of deuteron on an {IBM} Q 20-qubit machine. We also investigate the underlying statistics of simultaneous measurement and devise an adaptive strategy for mitigating harmful covariance terms.}
+      \field{day}{31}
+      \field{eprinttype}{arxiv}
+      \field{month}{7}
+      \field{note}{version: 1}
+      \field{number}{{arXiv}:1907.13623}
+      \field{title}{Minimizing State Preparations in Variational Quantum Eigensolver by Partitioning into Commuting Families}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1907.13623
+      \endverb
+      \verb{eprint}
+      \verb 1907.13623 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\KAN45J4K\\Gokhale et al. - 2019 - Minimizing State Preparations in Variational Quant.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\XPPXICUV\\1907.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.13623
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.13623
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{huggins_efficient_2021}{article}{}
+      \name{author}{7}{}{%
+        {{hash=7fa5a969d13c5644cd314c51cd157fe0}{%
+           family={Huggins},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=79a0c3f2d2ac6a6e26b1e6e488c3b198}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Nicholas\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=67db50e40049bac70a6d264e681d86de}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9906b78ec80183f9ac5008ae54ce7088}{%
+           family={Wiebe},
+           familyi={W\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2f4127ee3dcfdba45d94135b2fa6cdfb}{%
+           family={Whaley},
+           familyi={W\bibinitperiod},
+           given={K.\bibnamedelimi Birgitta},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e31dfa57acc25dd40fc695749e95c82f}
+      \strng{fullhash}{e31dfa57acc25dd40fc695749e95c82f}
+      \strng{bibnamehash}{e31dfa57acc25dd40fc695749e95c82f}
+      \strng{authorbibnamehash}{e31dfa57acc25dd40fc695749e95c82f}
+      \strng{authornamehash}{e31dfa57acc25dd40fc695749e95c82f}
+      \strng{authorfullhash}{e31dfa57acc25dd40fc695749e95c82f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variational algorithms are a promising paradigm for utilizing near-term quantum devices for modeling electronic states of molecular systems. However, previous bounds on the measurement time required have suggested that the application of these techniques to larger molecules might be infeasible. We present a measurement strategy based on a low-rank factorization of the two-electron integral tensor. Our approach provides a cubic reduction in term groupings over prior state-of-the-art and enables measurement times three orders of magnitude smaller than those suggested by commonly referenced bounds for the largest systems we consider. Although our technique requires execution of a linear-depth circuit prior to measurement, this is compensated for by eliminating challenges associated with sampling nonlocal Jordan–Wigner transformed operators in the presence of measurement error, while enabling a powerful form of error mitigation based on efficient postselection. We numerically characterize these benefits with noisy quantum circuit simulations for ground-state energies of strongly correlated electronic systems.}
+      \field{day}{5}
+      \field{issn}{2056-6387}
+      \field{journaltitle}{npj Quantum Information}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{1}
+      \field{shortjournal}{npj Quantum Inf}
+      \field{title}{Efficient and noise resilient measurements for quantum chemistry on near-term quantum computers}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/s41534-020-00341-7
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\ZE8SW6IR\\Huggins et al. - 2021 - Efficient and noise resilient measurements for qua.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41534-020-00341-7
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41534-020-00341-7
+      \endverb
+      \keyw{Quantum chemistry,Quantum simulation}
+    \endentry
+    \entry{hamamura_efficient_2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b3974e272c2b34897db5d93680b8fa1a}{%
+           family={Hamamura},
+           familyi={H\bibinitperiod},
+           given={Ikko},
+           giveni={I\bibinitperiod}}}%
+        {{hash=6c1352260ebdfc1d4a88bde42c2fc44c}{%
+           family={Imamichi},
+           familyi={I\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{aaded3c2901751c661dc782b9b373405}
+      \strng{fullhash}{aaded3c2901751c661dc782b9b373405}
+      \strng{bibnamehash}{aaded3c2901751c661dc782b9b373405}
+      \strng{authorbibnamehash}{aaded3c2901751c661dc782b9b373405}
+      \strng{authornamehash}{aaded3c2901751c661dc782b9b373405}
+      \strng{authorfullhash}{aaded3c2901751c661dc782b9b373405}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The advent of cloud quantum computing has led to the rapid development of quantum algorithms. In particular, it is necessary to study variational quantum-classical hybrid algorithms, which are executable on noisy intermediate-scale quantum ({NISQ}) computers. Evaluations of observables appear frequently in the variational quantum-classical hybrid algorithms for {NISQ} computers. By speeding up the evaluation of observables, it is possible to realize a faster algorithm and save resources of quantum computers. Grouping of observables with separable measurements has been conventionally used, and the grouping with entangled measurements has also been proposed recently by several teams. In this paper, we show that entangled measurements enhance the efficiency of evaluation of observables, both theoretically and experimentally, by taking into account the covariance effect, which may affect the quality of evaluation of observables. We also propose using a part of entangled measurements for grouping to keep the depth of extra gates constant. Our proposed method is expected to be used in conjunction with other related studies. We hope that entangled measurements would become crucial resources, not only for joint measurements but also for quantum information processing.}
+      \field{day}{19}
+      \field{issn}{2056-6387}
+      \field{journaltitle}{npj Quantum Information}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{1}
+      \field{shortjournal}{npj Quantum Inf}
+      \field{title}{Efficient evaluation of quantum observables using entangled measurements}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{6}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1038/s41534-020-0284-2
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\PZUKWYVI\\Hamamura and Imamichi - 2020 - Efficient evaluation of quantum observables using .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41534-020-0284-2
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41534-020-0284-2
+      \endverb
+      \keyw{Information theory and computation,Quantum information,Quantum simulation,Qubits}
+    \endentry
+    \entry{gokhale_on3_2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f81b959a274cf858af12371d973186a4}{%
+           family={Gokhale},
+           familyi={G\bibinitperiod},
+           given={Pranav},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3dc30ce8848da64646a981d48b5d2701}{%
+           family={Chong},
+           familyi={C\bibinitperiod},
+           given={Frederic\bibnamedelima T.},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{45dd01468e67925ad43b6b350954d5f2}
+      \strng{fullhash}{45dd01468e67925ad43b6b350954d5f2}
+      \strng{bibnamehash}{45dd01468e67925ad43b6b350954d5f2}
+      \strng{authorbibnamehash}{45dd01468e67925ad43b6b350954d5f2}
+      \strng{authornamehash}{45dd01468e67925ad43b6b350954d5f2}
+      \strng{authorfullhash}{45dd01468e67925ad43b6b350954d5f2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variational Quantum Eigensolver ({VQE}) is a promising algorithm for near-term quantum machines. It can be used to estimate the ground state energy of a molecule by performing separate measurements of \$O(N{\textasciicircum}4)\$ terms. Several recent papers observed that this scaling may be reducible to \$O(N{\textasciicircum}3)\$ by partitioning the terms into linear-sized commuting families that can be measured simultaneously. We confirm these empirical observations by studying the {MIN}-{COMMUTING}-{PARTITION} problem at the level of the fermionic Hamiltonian and its encoding into qubits. Moreover, we provide a fast, pre-computable procedure for creating linearly-sized commuting partitions by solving a round-robin scheduling problem via flow networks.}
+      \field{day}{30}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{number}{{arXiv}:1908.11857}
+      \field{title}{\$O(N{\textasciicircum}3)\$ Measurement Cost for Variational Quantum Eigensolver on Molecular Hamiltonians}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1908.11857
+      \endverb
+      \verb{eprint}
+      \verb 1908.11857 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\ZPFDLDY6\\Gokhale and Chong - 2019 - \$O(N^3)\$ Measurement Cost for Variational Quantum .pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\VDE53X4Q\\1908.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1908.11857
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1908.11857
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{bonet-monroig_performance_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=cc8e039a71f685b6e83dca37cc6099ae}{%
+           family={Bonet-Monroig},
+           familyi={B\bibinithyphendelim M\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c8cf19241225247d6d07dbf8a516b8ed}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=582cf42d5a9ea3ffe12e2d4b7cc3d4c2}{%
+           family={Vermetten},
+           familyi={V\bibinitperiod},
+           given={Diederick},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1bc617afee72f5480edd8839f3a17fbb}{%
+           family={Senjean},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a621a01e9fd35a24a85be4334c20fee0}{%
+           family={Moussa},
+           familyi={M\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=63db21b1dd89fc12aac7791967820b87}{%
+           family={Bäck},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b420ac4d885f25bf565165efb48b70c7}{%
+           family={Dunjko},
+           familyi={D\bibinitperiod},
+           given={Vedran},
+           giveni={V\bibinitperiod}}}%
+        {{hash=cb3e30e7e7df4228662c8810b3c2f7e2}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Thomas\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \strng{fullhash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \strng{bibnamehash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \strng{authorbibnamehash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \strng{authornamehash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \strng{authorfullhash}{a3a546d464875ba3a5d6cac4d561b1e8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variational quantum algorithms ({VQAs}) offer a promising path toward using near-term quantum hardware for applications in academic and industrial research. These algorithms aim to find approximate solutions to quantum problems by optimizing a parametrized quantum circuit using a classical optimization algorithm. A successful {VQA} requires fast and reliable classical optimization algorithms. Understanding and optimizing how off-the-shelf optimization methods perform in this context is important for the future of the field. In this work, we study the performance of four commonly used gradient-free optimization methods [sequential least-squares quadratic programming, constrained optimization by linear approximations, the covariance matrix adaptation evolutionary strategy ({CMA}-{ES}), and the simultaneous perturbation stochastic approximation ({SPSA})] to find ground-state energies of a range of small chemistry and material science problems. We test a telescoping sampling scheme (where the accuracy of the cost-function estimate provided to the optimizer is increased as the optimization converges) for all methods, demonstrating mixed results across our range of optimizers and problems chosen. We further hyperparameter tune two of the four optimizers ({CMA}-{ES} and {SPSA}) across a large range of models and demonstrate that with appropriate hyperparameter tuning, {CMA}-{ES} is competitive with and sometimes outperforms {SPSA} (which is not observed in the absence of hyperparameter tuning). Finally, we investigate the ability of an optimizer to beat the “sampling-noise floor” given by the sampling noise of each cost-function estimate provided to the optimizer. Our results demonstrate the necessity for tailoring and hyperparameter tuning known optimization techniques for inherently noisy variational quantum algorithms and that the variational landscape that one finds in a {VQA} is highly problem and system dependent. This provides guidance for future implementations of these algorithms in experiments.}
+      \field{day}{7}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{3}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{Performance comparison of optimization methods on variational quantum algorithms}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{107}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{032407}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.107.032407
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\PC3LIQU3\\PhysRevA.107.html:text/html;Full Text:C\:\\Users\\stepa\\Zotero\\storage\\NC6RJRVN\\Bonet-Monroig et al. - 2023 - Performance comparison of optimization methods on .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.107.032407
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.107.032407
+      \endverb
+    \endentry
+    \entry{born_zur_1927}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bad172b2c82dbccc8e126f5da73356ce}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0d4bfc7ceea303cb148c907baabcd66c}{%
+           family={Oppenheimer},
+           familyi={O\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \strng{fullhash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \strng{bibnamehash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \strng{authorbibnamehash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \strng{authornamehash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \strng{authorfullhash}{d67cb7db9fe99d3f0ed3cf56f7b0c2c0}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1521-3889}
+      \field{journaltitle}{Annalen der Physik}
+      \field{langid}{english}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19273892002}
+      \field{number}{20}
+      \field{title}{Zur Quantentheorie der Molekeln}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{389}
+      \field{year}{1927}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{457\bibrangedash 484}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1002/andp.19273892002
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\GH8QQP3M\\Born and Oppenheimer - 1927 - Zur Quantentheorie der Molekeln.pdf:application/pdf;Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\UDHMSIZQ\\andp.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19273892002
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19273892002
+      \endverb
+    \endentry
+    \entry{zhang_permanent_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8b2eec18ec220d3316dcb673fca8a930}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=55c062dea70559534ed5b0dc4bc76595}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi F.},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \strng{fullhash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \strng{bibnamehash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \strng{authorbibnamehash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \strng{authornamehash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \strng{authorfullhash}{70c5f24b371ad5ac36dc0f9c0e12f7fb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the performance of permanent states (the bosonic counterpart of the Slater determinant state) as approximating functions for bosons, with the intention to develop variational methods based upon them. For a system of \$N\$ identical bosons, a permanent state is constructed by taking a set of \$N\$ arbitrary (not necessarily orthonormal) single-particle orbitals, forming their product and then symmetrizing it. It is found that for the one-dimensional Bose-Hubbard model with the periodic boundary condition and at unit filling, the exact ground state can be very well approximated by a permanent state, in that the permanent state has high overlap (at least 0.96 even for 12 particles and 12 sites) with the exact ground state and can reproduce both the ground state energy and the single-particle correlators to high precision. For a generic model, we have devised a greedy algorithm to find the optimal set of single-particle orbitals to minimize the variational energy or maximize the overlap with a target state. It turns out that quite often the ground state of a bosonic system can be well approximated by a permanent state by all the criterions of energy, overlap, and correlation functions. And even if the error is apparent, it can often be remedied by including more configurations, i.e., by allowing the variational wave function to be a combination of multiple permanent states. The algorithm is used to study the stability of a two-particle system, with great success. All these suggest that permanent states are very effective as variational wave functions for bosonic systems, and hence deserve further studies.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{03784371}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{month}{8}
+      \field{shortjournal}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Permanent variational wave functions for bosons}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{599}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{127399}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physa.2022.127399
+      \endverb
+      \verb{eprint}
+      \verb 2106.14679 [cond-mat]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\NKDMV6B8\\Zhang et al. - 2022 - Permanent variational wave functions for bosons.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\753WRKHN\\2106.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2106.14679
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2106.14679
+      \endverb
+      \keyw{Condensed Matter - Quantum Gases}
+    \endentry
+    \entry{abrams_simulation_1997}{article}{}
+      \name{author}{2}{}{%
+        {{hash=771de2a580e9cf637618c5e3e614c4a7}{%
+           family={Abrams},
+           familyi={A\bibinitperiod},
+           given={Daniel\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=501c0933970931f080455b29b43e560d}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{11b3443800b217dbc0001620c5a44d43}
+      \strng{fullhash}{11b3443800b217dbc0001620c5a44d43}
+      \strng{bibnamehash}{11b3443800b217dbc0001620c5a44d43}
+      \strng{authorbibnamehash}{11b3443800b217dbc0001620c5a44d43}
+      \strng{authornamehash}{11b3443800b217dbc0001620c5a44d43}
+      \strng{authorfullhash}{11b3443800b217dbc0001620c5a44d43}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide fast algorithms for simulating many-body Fermi systems on a universal quantum computer. Both first and second quantized descriptions are considered, and the relative computational complexities are determined in each case. In order to accommodate fermions using a first quantized Hamiltonian, an efficient quantum algorithm for antisymmetrization is given. Finally, a simulation of the Hubbard model is discussed in detail.}
+      \field{day}{29}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{9}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{13}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Simulation of Many-Body Fermi Systems on a Universal Quantum Computer}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{79}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2586\bibrangedash 2589}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.79.2586
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\K82YR79E\\PhysRevLett.79.html:text/html;Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\PYLJFQJG\\Abrams and Lloyd - 1997 - Simulation of Many-Body Fermi Systems on a Univers.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.2586
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.2586
+      \endverb
+    \endentry
+    \entry{sim_expressibility_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f156a71a758735a1cfc0aab991a121e2}{%
+           family={Sim},
+           familyi={S\bibinitperiod},
+           given={Sukin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9831fd95cc14da373cb72142dd856b48}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Peter\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=099c0990d86eb9b4cfe762b761e4e8d7}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaec6a08511453f522007e3455c57758}
+      \strng{fullhash}{eaec6a08511453f522007e3455c57758}
+      \strng{bibnamehash}{eaec6a08511453f522007e3455c57758}
+      \strng{authorbibnamehash}{eaec6a08511453f522007e3455c57758}
+      \strng{authornamehash}{eaec6a08511453f522007e3455c57758}
+      \strng{authorfullhash}{eaec6a08511453f522007e3455c57758}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Parameterized quantum circuits play an essential role in the performance of many variational hybrid quantum-classical ({HQC}) algorithms. One challenge in implementing such algorithms is to choose an effective circuit that well represents the solution space while maintaining a low circuit depth and number of parameters. To characterize and identify expressible, yet compact, parameterized circuits, we propose several descriptors, including measures of expressibility and entangling capability, that can be statistically estimated from classical simulations of parameterized quantum circuits. We compute these descriptors for different circuit structures, varying the qubit connectivity and selection of gates. From our simulations, we identify circuit fragments that perform well with respect to the descriptors. In particular, we quantify the substantial improvement in performance of two-qubit gates in a ring or all-to-all connected arrangement compared to that of those on a line. Furthermore, we quantify the improvement in expressibility and entangling capability achieved by sequences of controlled X-rotation gates compared to sequences of controlled Z-rotation gates. In addition, we investigate how expressibility "saturates" with increased circuit depth, finding that the rate and saturated-value appear to be distinguishing features of a parameterized quantum circuit template. While the correlation between each descriptor and performance of an algorithm remains to be investigated, methods and results from this study can be useful for both algorithm development and design of experiments for general variational {HQC} algorithms.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2511-9044, 2511-9044}
+      \field{journaltitle}{Advanced Quantum Technologies}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Adv Quantum Tech}
+      \field{title}{Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms}
+      \field{urlday}{12}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1900070}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/qute.201900070
+      \endverb
+      \verb{eprint}
+      \verb 1905.10876 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\YH93LC5T\\Sim et al. - 2019 - Expressibility and entangling capability of parame.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\W2HMBVDX\\1905.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.10876
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.10876
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{kingma_adam_2017}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss {AdaMax}, a variant of Adam based on the infinity norm.}
+      \field{day}{29}
+      \field{eprinttype}{arxiv}
+      \field{month}{1}
+      \field{note}{version: 9}
+      \field{number}{{arXiv}:1412.6980}
+      \field{shorttitle}{Adam}
+      \field{title}{Adam: A Method for Stochastic Optimization}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1412.6980
+      \endverb
+      \verb{eprint}
+      \verb 1412.6980 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\2ADMBM8Y\\Kingma and Ba - 2017 - Adam A Method for Stochastic Optimization.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\E2ESH276\\1412.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{nelder_simplex_1965}{article}{}
+      \name{author}{2}{}{%
+        {{hash=97a60525676f2f0735b3bace8039e9af}{%
+           family={Nelder},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b7b244d12aeefd19786bac78fb546e01}{%
+           family={Mead},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \strng{fullhash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \strng{bibnamehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \strng{authorbibnamehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \strng{authornamehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \strng{authorfullhash}{c883f46bc4773c0e0cd4ad615f0e1a00}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A method is described for the minimization of a function of n variables, which depends on the comparison of function values at the (n + 1) vertices of a general simplex, followed by the replacement of the vertex with the highest value by another point. The simplex adapts itself to the local landscape, and contracts on to the final minimum. The method is shown to be effective and computationally compact. A procedure is given for the estimation of the Hessian matrix in the neighbourhood of the minimum, needed in statistical estimation problems.}
+      \field{day}{1}
+      \field{issn}{0010-4620}
+      \field{journaltitle}{The Computer Journal}
+      \field{month}{1}
+      \field{number}{4}
+      \field{shortjournal}{The Computer Journal}
+      \field{title}{A Simplex Method for Function Minimization}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{7}
+      \field{year}{1965}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{308\bibrangedash 313}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1093/comjnl/7.4.308
+      \endverb
+      \verb{file}
+      \verb Nelder and Mead - 1965 - A Simplex Method for Function Minimization.pdf:C\:\\Users\\stepa\\Zotero\\storage\\2FIR6GYF\\Nelder and Mead - 1965 - A Simplex Method for Function Minimization.pdf:application/pdf;Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\WQBSTT4C\\354237.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/comjnl/7.4.308
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/comjnl/7.4.308
+      \endverb
+    \endentry
+    \entry{powell_efficient_1964}{article}{}
+      \name{author}{1}{}{%
+        {{hash=15643444aed9bbb3d150d9895b848437}{%
+           family={Powell},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi J.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{fullhash}{15643444aed9bbb3d150d9895b848437}
+      \strng{bibnamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authorbibnamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authornamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authorfullhash}{15643444aed9bbb3d150d9895b848437}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A simple variation of the well-known method of minimizing a function of several variables by changing one parameter at a time is described. This variation is such that when the procedure is applied to a quadratic form, it causes conjugate directions to be chosen, so the ultimate rate of convergence is fast when the method is used to minimize a general function. A further variation completes the method, and its ensures that the convergence rate from a bad approximation to a minimum is always efficient. Practical applications of the procedure have proved to be very satisfactory, and numerical examples are given in which functions of up to twenty variables are minimized.}
+      \field{day}{1}
+      \field{issn}{0010-4620}
+      \field{journaltitle}{The Computer Journal}
+      \field{month}{1}
+      \field{number}{2}
+      \field{shortjournal}{The Computer Journal}
+      \field{title}{An efficient method for finding the minimum of a function of several variables without calculating derivatives}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{7}
+      \field{year}{1964}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{155\bibrangedash 162}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1093/comjnl/7.2.155
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\BELPC73G\\335330.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/comjnl/7.2.155
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/comjnl/7.2.155
+      \endverb
+    \endentry
+    \entry{ostaszewski_structure_2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bbed4c280130bd2ccc3c81a498a2d679}{%
+           family={Ostaszewski},
+           familyi={O\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b1d176833e606713973a4617ef10e618}{%
+           family={Grant},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a72591df50023022dfff6f8200ef27fe}{%
+           family={Benedetti},
+           familyi={B\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9cf074657dbf9584857bf97b2929b6b6}
+      \strng{fullhash}{9cf074657dbf9584857bf97b2929b6b6}
+      \strng{bibnamehash}{9cf074657dbf9584857bf97b2929b6b6}
+      \strng{authorbibnamehash}{9cf074657dbf9584857bf97b2929b6b6}
+      \strng{authornamehash}{9cf074657dbf9584857bf97b2929b6b6}
+      \strng{authorfullhash}{9cf074657dbf9584857bf97b2929b6b6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose an efficient method for simultaneously optimizing both the structure and parameter values of quantum circuits with only a small computational overhead. Shallow circuits that use structure optimization perform significantly better than circuits that use parameter updates alone, making this method particularly suitable for noisy intermediate-scale quantum computers. We demonstrate the method for optimizing a variational quantum eigensolver for finding the ground states of Lithium Hydride and the Heisenberg model in simulation, and for finding the ground state of Hydrogen gas on the {IBM} Melbourne quantum computer.}
+      \field{day}{28}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2521-327X}
+      \field{journaltitle}{Quantum}
+      \field{month}{1}
+      \field{shortjournal}{Quantum}
+      \field{title}{Structure optimization for parameterized quantum circuits}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{volume}{5}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{391}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2021-01-28-391
+      \endverb
+      \verb{eprint}
+      \verb 1905.09692 [quant-ph]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\S7CXYE82\\Ostaszewski et al. - 2021 - Structure optimization for parameterized quantum c.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\DDM7Y9QY\\1905.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.09692
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.09692
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

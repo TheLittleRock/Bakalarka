@@ -1,6 +1,6 @@
-PWD d:\Desktop\FJFI\Bakalarka
+PWD c:\Users\stepa\Desktop\FJFI\Bakalarka\Bakalarka
 INPUT C:\Users\stepa\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Desktop\FJFI\Bakalarka\BP_main.tex
+INPUT c:\Users\stepa\Desktop\FJFI\Bakalarka\Bakalarka\BP_main.tex
 OUTPUT BP_main.log
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -468,6 +468,10 @@ INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\b
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-german.tex
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\de\babel-de.ini
 OUTPUT BP_main.aux
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
@@ -520,6 +524,15 @@ INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\englis
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex-iso690\german-iso.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex-iso690\german-iso.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex-iso690\german-iso.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\german.lbx
 OUTPUT BP_main.bcf
 INPUT BP_main.bbl
 INPUT .\BP_main.bbl
@@ -807,6 +820,12 @@ INPUT .\Images\VQE_diagram.png
 INPUT .\Images\VQE_diagram.png
 INPUT .\Images\VQE_diagram.png
 INPUT .\Images\VQE_diagram.png
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\tcxr.tfm
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\tcxr.vf
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtcxr.tfm
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txmi1.vf
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
@@ -822,6 +841,8 @@ INPUT .\BP_main.out
 INPUT .\BP_main.out
 INPUT BP_main.run.xml
 OUTPUT BP_main.run.xml
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
+INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxi.pfb
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxi.pfb
 INPUT C:\Users\stepa\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxmi.pfb
