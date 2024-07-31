@@ -1,3 +1,5 @@
+% !TEX TS-program = pdflatex
+% !TEX options = --shell-escape
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
@@ -10,6 +12,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{booktabs}
 \usepackage{verbatim}
 \usepackage{tikz}
 \usepackage{mathtools}
@@ -17,6 +20,7 @@
 \usepackage{xcolor}
 \usepackage{xfrac}
 \usetikzlibrary{angles, quotes, quantikz2}
+%\usetikzlibrary{external}
 \usepackage{pgfplots}
 \usepackage{subcaption}
 \usepackage{titlesec}
@@ -26,9 +30,14 @@
 \usepackage[
   backend=biber,        % if we want unicode and many other features (biber is already by default)
   style=iso-numeric, % or another iso-<style>
+  sorting=none
 ]{biblatex}
 \addbibresource{Bibliografie.bib}
 \renewcommand*{\bibfont}{\footnotesize}
+
+\usepackage[ruled, linesnumbered]{algorithm2e}
+
+%\tikzexternalize
 
 \def\documentdate{5. srpna 2024}
 %\setlength{\parindent}{0pt}
@@ -54,13 +63,16 @@
 %% Use Times New Roman font for text and Belleek font for math
 %% Please make sure that the 'esint' package is turned off in the
 %% 'Math options' page.
-\usepackage[varg]{txfonts}
+%\usepackage[varg]{txfonts}
 
 %% Use Utopia text with Fourier-GUTenberg math
 %\usepackage{fourier}
 
 %% Bitstream Charter text with Math Design math
 %\usepackage[charter]{mathdesign}
+
+\usepackage{mlmodern}        % Latin Modern family of fonts
+\usepackage[T1]{fontenc}  
 
 %%---------------------------------------------------------------------
 
@@ -124,13 +136,18 @@
 \usepackage{babel}
 
 % Definice bra-ketu
-%\newcommand{\ket}[1]{\left|{#1}\right\rangle}
-%\newcommand{\bra}[1]{\left\langle{#1}\right|}
-%\newcommand{\braket}[2]{\left\langle{#1}\middle|{#2}\right\rangle}
-\newcommand{\swch}[3]{\left\langle{#1}\middle| #2 \middle| {#3}\right\rangle}
+\newcommand{\kett}[1]{|{#1}\rangle}
+\newcommand{\brat}[1]{\langle{#1}|}
+\newcommand{\bracket}[2]{\langle{#1} | {#2}\rangle}
+\newcommand{\swch}[3]{\langle{#1} | #2 | {#3} \rangle}
 
 \newcommand{\p}[1]{\ket{#1}\bra{#1}}
 \newcommand{\pp}[2]{\ket{#1}\bra{#2}}
+\newcommand{\ppt}[2]{\kett{#1}\brat{#2}}
+
+\newcommand{\comm}[2]{[ {#1},{#2} ]}
+
+\newcommand{\s}[1]{\langle{#1}\rangle}
 
 %\newcommand{\vctr}[2]{\begin{pmatrix} {#1} \\ #2 \end{pmatrix}}
 %\newcommand{\bvctr}[2]{\begin{pmatrix} {#1} \\ #2 \end{pmatrix}}
@@ -318,7 +335,7 @@ podle abecedy a oddělená čárkou
 \vfill{}
 ~
 
-\selectlanguage{american}%
+\selectlanguage{english}%
 \begin{onehalfspace}
 \noindent \emph{Title:}
 

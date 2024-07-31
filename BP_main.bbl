@@ -72,7 +72,6 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Quantum computers promise to efficiently solve important problems that are intractable on a conventional computer. For quantum systems, where the physical dimension grows exponentially, finding the eigenvalues of certain operators is one such intractable problem and remains a fundamental challenge. The quantum phase estimation algorithm efficiently finds the eigenvalue of a given eigenvector but requires fully coherent evolution. Here we present an alternative approach that greatly reduces the requirements for coherent evolution and combine this method with a new approach to state preparation based on ansätze and classical optimization. We implement the algorithm by combining a highly reconfigurable photonic quantum processor with a conventional computer. We experimentally demonstrate the feasibility of this approach with an example from quantum chemistry—calculating the ground-state molecular energy for He–H+. The proposed approach drastically reduces the coherence time requirements, enhancing the potential of quantum resources available today and in the near future.}
       \field{day}{23}
       \field{issn}{2041-1723}
       \field{journaltitle}{Nature Communications}
@@ -82,20 +81,13 @@
       \field{number}{1}
       \field{shortjournal}{Nat Commun}
       \field{title}{A variational eigenvalue solver on a photonic quantum processor}
-      \field{urlday}{1}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
       \field{volume}{5}
       \field{year}{2014}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{4213}
       \range{pages}{1}
       \verb{doi}
       \verb 10.1038/ncomms5213
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\YK78JJGW\\Peruzzo et al. - 2014 - A variational eigenvalue solver on a photonic quan.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://www.nature.com/articles/ncomms5213
@@ -103,7 +95,6 @@
       \verb{url}
       \verb https://www.nature.com/articles/ncomms5213
       \endverb
-      \keyw{Quantum chemistry,Applied physics,Quantum optics}
     \endentry
     \entry{mcclean_theory_2016}{article}{}
       \name{author}{4}{}{%
@@ -138,7 +129,6 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Many quantum algorithms have daunting resource requirements when compared to what is available today. To address this discrepancy, a quantum-classical hybrid optimization scheme known as ‘the quantum variational eigensolver’ was developed (Peruzzo et al 2014 Nat. Commun. 5 4213) with the philosophy that even minimal quantum resources could be made useful when used in conjunction with classical routines. In this work we extend the general theory of this algorithm and suggest algorithmic improvements for practical implementations. Specifically, we develop a variational adiabatic ansatz and explore unitary coupled cluster where we establish a connection from second order unitary coupled cluster to universal gate sets through a relaxation of exponential operator splitting. We introduce the concept of quantum variational error suppression that allows some errors to be suppressed naturally in this algorithm on a pre-threshold quantum device. Additionally, we analyze truncation and correlated sampling in Hamiltonian averaging as ways to reduce the cost of this procedure. Finally, we show how the use of modern derivative free optimization techniques can offer dramatic computational savings of up to three orders of magnitude over previously used optimization techniques.}
       \field{issn}{1367-2630}
       \field{journaltitle}{New Journal of Physics}
       \field{langid}{english}
@@ -147,20 +137,13 @@
       \field{number}{2}
       \field{shortjournal}{New J. Phys.}
       \field{title}{The theory of variational hybrid quantum-classical algorithms}
-      \field{urlday}{1}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
       \field{volume}{18}
       \field{year}{2016}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{023023}
       \range{pages}{1}
       \verb{doi}
       \verb 10.1088/1367-2630/18/2/023023
-      \endverb
-      \verb{file}
-      \verb IOP Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\Q3YY9KCC\\McClean et al. - 2016 - The theory of variational hybrid quantum-classical.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://dx.doi.org/10.1088/1367-2630/18/2/023023
@@ -203,9 +186,6 @@
       \field{title}{Quantum computation and quantum information}
       \field{year}{2010}
       \field{dateera}{ce}
-      \verb{file}
-      \verb bafykbzaceace6ecz2zgmb2rmtkp7iqygt6iuifpy54s5pgzurqzk5hsckpic6.pdf:C\:\\Users\\stepa\\Zotero\\storage\\L2JMHJQU\\bafykbzaceace6ecz2zgmb2rmtkp7iqygt6iuifpy54s5pgzurqzk5hsckpic6.pdf:application/pdf
-      \endverb
     \endentry
     \entry{tilly_variational_2022}{article}{}
       \name{author}{11}{}{%
@@ -275,7 +255,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The variational quantum eigensolver (or {VQE}), first developed by Peruzzo et al. (2014), has received significant attention from the research community in recent years. It uses the variational principle to compute the ground state energy of a Hamiltonian, a problem that is central to quantum chemistry and condensed matter physics. Conventional computing methods are constrained in their accuracy due to the computational limits facing exact modeling of the exponentially growing electronic wavefunction for these many-electron systems. The {VQE} may be used to model these complex wavefunctions in polynomial time, making it one of the most promising near-term applications for quantum computing. One important advantage is that variational algorithms have been shown to present some degree of resilience to the noise in the quantum hardware. Finding a path to navigate the relevant literature has rapidly become an overwhelming task, with many methods promising to improve different parts of the algorithm, but without clear descriptions of how the diverse parts fit together. The potential practical advantages of the algorithm are also widely discussed in the literature, but with varying conclusions. Despite strong theoretical underpinnings suggesting excellent scaling of individual {VQE} components, studies have pointed out that their various pre-factors could be too large to reach a quantum computing advantage over conventional methods. This review aims at disentangling the relevant literature to provide a comprehensive overview of the progress that has been made on the different parts of the algorithm, and to discuss future areas of research that are fundamental for the {VQE} to deliver on its promises. All the different components of the algorithm are reviewed in detail. These include the representation of Hamiltonians and wavefunctions on a quantum computer, the optimization process to find ground state energies, the post processing mitigation of quantum errors, and suggested best practices. We identify four main areas of future research: (1) optimal measurement schemes for reduction of circuit repetitions required; (2) large scale parallelization across many quantum computers; (3) ways to overcome the potential appearance of vanishing gradients in the optimization process for large systems, and how the number of iterations required for the optimization scales with system size; (4) the extent to which {VQE} suffers for quantum noise, and whether this noise can be mitigated in a tractable manner. The answers to these open research questions will determine the routes for the {VQE} to achieve quantum advantage as the quantum computing hardware scales up and as the noise levels are reduced.}
       \field{day}{5}
       \field{issn}{0370-1573}
       \field{journaltitle}{Physics Reports}
@@ -284,20 +263,13 @@
       \field{shortjournal}{Physics Reports}
       \field{shorttitle}{The Variational Quantum Eigensolver}
       \field{title}{The Variational Quantum Eigensolver: A review of methods and best practices}
-      \field{urlday}{1}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
       \field{volume}{986}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{1\bibrangedash 128}
       \range{pages}{128}
       \verb{doi}
       \verb 10.1016/j.physrep.2022.08.003
-      \endverb
-      \verb{file}
-      \verb Full Text:C\:\\Users\\stepa\\Zotero\\storage\\LZIC5HBE\\Tilly et al. - 2022 - The Variational Quantum Eigensolver A review of m.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://www.sciencedirect.com/science/article/pii/S0370157322003118
@@ -305,7 +277,6 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0370157322003118
       \endverb
-      \keyw{Electronic structure,Many-body physics,Noisy intermediate scale quantum devices,Quantum chemistry,Quantum computing,Variational methods}
     \endentry
     \entry{feynman_simulating_1982}{article}{}
       \name{author}{1}{}{%
@@ -334,20 +305,13 @@
       \field{number}{6}
       \field{shortjournal}{Int J Theor Phys}
       \field{title}{Simulating physics with computers}
-      \field{urlday}{1}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
       \field{volume}{21}
       \field{year}{1982}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{467\bibrangedash 488}
       \range{pages}{22}
       \verb{doi}
       \verb 10.1007/BF02650179
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\6S5JIPQH\\Feynman - 1982 - Simulating physics with computers.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1007/BF02650179
@@ -355,7 +319,6 @@
       \verb{url}
       \verb https://doi.org/10.1007/BF02650179
       \endverb
-      \keyw{Quantum Mechanic,Calcite,Cellular Automaton,Quantum System,Wigner Function}
     \endentry
     \entry{feynman_quantum_1986}{article}{}
       \name{author}{1}{}{%
@@ -376,7 +339,6 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The physical limitations, due to quantum mechanics, on the functioning of computers are analyzed.}
       \field{day}{1}
       \field{issn}{1572-9516}
       \field{journaltitle}{Foundations of Physics}
@@ -385,20 +347,13 @@
       \field{number}{6}
       \field{shortjournal}{Found Phys}
       \field{title}{Quantum mechanical computers}
-      \field{urlday}{19}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{volume}{16}
       \field{year}{1986}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{507\bibrangedash 531}
       \range{pages}{25}
       \verb{doi}
       \verb 10.1007/BF01886518
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\CBU57WSI\\Feynman - 1986 - Quantum mechanical computers.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1007/BF01886518
@@ -406,7 +361,6 @@
       \verb{url}
       \verb https://doi.org/10.1007/BF01886518
       \endverb
-      \keyw{Mechanical Computer,Physical Limitation,Quantum Mechanic,Quantum Mechanical Computer}
     \endentry
     \entry{nielsen_fermionic_2005}{inproceedings}{}
       \name{author}{1}{}{%
@@ -426,17 +380,9 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{When you learn undergraduate quantum mechanics, it starts out being all about wavefunctions and Hamiltonians, finding energy eigenvalues and eigenstates, calculating measurement probabilities, and so on. If your physics education was anything like mine, at some point a mysterious jump occurs. People teaching more advanced subjects, like quantum field theory, condensed matter physics, or quantum optics, start “imposing canonical commutation relations” on various field operators. Any student quickly realizes that “imposing canonical commutation relations” is extremely important, but, speaking personally, at the time I found it quite mysterious exactly what people meant by this phrase. It’s only in the past few years that I’ve obtained a satisfactory understanding of how this works, and understood why I had such trouble in the first place. These notes contain two parts. The first part is a short tutorial explaining the Fermionic canonical commutation relations ({CCRs}) from an elementary point of view: the different meanings they can have, both mathematical and physical, and what mathematical consequences they have. I concentrate more on the mathematical consequences than the physical in these notes, since having a good grasp of the former seems to make it relatively easy to appreciate the latter, but not so much vice versa. I may come back to the physical aspect in some later notes. The second part of the notes describes a beautiful application of the Fermionic {CCRs} known as the {JordanWigner} transform. This powerful tool allows us to map a system of interacting qubits onto an equivalent system of interacting Fermions, or, vice versa, to map a system of Fermions onto a system of qubits. Why is this kind of mapping interesting? It’s interesting because it means that anything we understand about one type of system (e.g., Fermions) can be immediately applied to learn something about the other type of system (e.g., qubits). I’ll describe an application of this idea, taking what appears to be a very complicated one-dimensional model of interacting spin12 particles, and showing that it is equivalent to a simple model of non-interacting Fermions. This enables us to solve for the energy spectrum and eigenstates of the original Hamiltonian. This has, of course,}
       \field{title}{The Fermionic canonical commutation relations and the Jordan-Wigner transform}
-      \field{urlday}{19}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{year}{2005}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Nielsen - 2005 - The Fermionic canonical commutation relations and .pdf:C\:\\Users\\stepa\\Zotero\\storage\\R7GRKMXG\\Nielsen - 2005 - The Fermionic canonical commutation relations and .pdf:application/pdf
-      \endverb
       \verb{urlraw}
       \verb https://www.semanticscholar.org/paper/The-Fermionic-canonical-commutation-relations-and-Nielsen/18341dd1f056fdcad2ebf4ea2df59db522e041f6
       \endverb
@@ -467,7 +413,6 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The recent developments of quantum computing present potential novel pathways for quantum chemistry, as the increased computational power of quantum computers could be harnessed to naturally encode and solve electronic structure problems. Theoretically exact quantum algorithms for chemistry have been proposed (e.g. Quantum Phase Estimation) but the limited capabilities of current noisy intermediate scale quantum devices ({NISQ}) motivated the development of less demanding hybrid algorithms. In this context, the Variational Quantum Eigensolver ({VQE}) algorithm was successfully introduced as an effective method to compute the ground state energy of small molecules. The current study investigates the Folded Spectrum ({FS}) method as an extension to the {VQE} algorithm for the computation of molecular excited states. It provides the possibility of directly computing excited states around a selected target energy, using the same ansatz as for the ground state calculation. Inspired by the variance-based methods from the Quantum Monte Carlo literature, the {FS} method minimizes the energy variance, thus requiring a computationally expensive squared Hamiltonian. We alleviate this potentially poor scaling by employing a Pauli grouping procedure, identifying sets of commuting Pauli strings that can be evaluated simultaneously. This allows for a significant reduction of the computational cost. We apply the {FS}-{VQE} method to small molecules (H\$\_2\$,{LiH}), obtaining all electronic excited states with chemical accuracy on ideal quantum simulators.}
       \field{day}{26}
       \field{eprinttype}{arxiv}
       \field{issn}{1549-9618, 1549-9626}
@@ -477,13 +422,9 @@
       \field{shortjournal}{J. Chem. Theory Comput.}
       \field{shorttitle}{Folded Spectrum {VQE}}
       \field{title}{Folded Spectrum {VQE} : A quantum computing method for the calculation of molecular excited states}
-      \field{urlday}{30}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
       \field{volume}{20}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{2491\bibrangedash 2504}
       \range{pages}{14}
       \verb{doi}
@@ -492,16 +433,12 @@
       \verb{eprint}
       \verb 2305.04783 [physics, physics:quant-ph]
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\9D26WD6W\\Tazi and Thom - 2024 - Folded Spectrum VQE A quantum computing method f.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\8S7Q9I8M\\2305.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2305.04783
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/2305.04783
       \endverb
-      \keyw{Physics - Chemical Physics,Quantum Physics}
     \endentry
     \entry{stechly_introduction_2024}{misc}{}
       \name{author}{1}{}{%
@@ -524,26 +461,18 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This document is a pdf version of the series of blogposts about variational quantum algorithms ({VQA}) I originally posted on my blog Musty Thoughts. It provides an explanation of the basic variational algorithms, such as Variational Quantum Eigensolver ({VQE}) and Quantum Approximate Optimization Algorithm ({QAOA}), as well as a more general framework for {VQAs}. It also describes some more advanced techniques that can be used to make these algorithms more efficient, as well as the challenges associated with using them.}
       \field{day}{24}
       \field{eprinttype}{arxiv}
       \field{month}{2}
       \field{number}{{arXiv}:2402.15879}
       \field{title}{Introduction to Variational Quantum Algorithms}
-      \field{urlday}{19}
-      \field{urlmonth}{3}
-      \field{urlyear}{2024}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.2402.15879
       \endverb
       \verb{eprint}
       \verb 2402.15879 [quant-ph]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\3SNBPI49\\Stęchły - 2024 - Introduction to Variational Quantum Algorithms.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\77ZCPBKC\\2402.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2402.15879
@@ -551,7 +480,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/2402.15879
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{qiskitextbook2023}{book}{}
       \name{author}{1}{}{%
@@ -610,6 +538,51 @@
       \verb https://upload.wikimedia.org/wikipedia/commons/e/e0/Quantum_Logic_Gates.png
       \endverb
     \endentry
+    \entry{qubitguide}{online}{}
+      \name{author}{4}{}{%
+        {{hash=1395f39eb493cf3ed78c74785d3f9a9b}{%
+           family={Ekert},
+           familyi={E\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e88db0f26f9d32aaf0857cafcbad359}{%
+           family={Hosgood},
+           familyi={H\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ee5f1c5c657dc9af306ed48636bb4f0e}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6c3f789dc58ac3a5a1a7f8179527fe97}{%
+           family={Macchiavello},
+           familyi={M\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4c5389f19035acb032342a19c34393c}
+      \strng{fullhash}{d4c5389f19035acb032342a19c34393c}
+      \strng{bibnamehash}{d4c5389f19035acb032342a19c34393c}
+      \strng{authorbibnamehash}{d4c5389f19035acb032342a19c34393c}
+      \strng{authornamehash}{d4c5389f19035acb032342a19c34393c}
+      \strng{authorfullhash}{d4c5389f19035acb032342a19c34393c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{5}
+      \field{title}{{Introduction to Quantum Information Science}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://qubit.guide
+      \endverb
+      \verb{url}
+      \verb https://qubit.guide
+      \endverb
+    \endentry
     \entry{liu2014three}{book}{}
       \name{author}{2}{}{%
         {{hash=fda8a6476fa840f1f86a595e38f1212a}{%
@@ -644,6 +617,90 @@
       \endverb
       \verb{url}
       \verb https://books.google.cz/books?id=QxbFBAAAQBAJ
+      \endverb
+    \endentry
+    \entry{modra_smrt}{book}{}
+      \name{author}{3}{}{%
+        {{hash=f4e3dfdc2695296add36b22e65d400b0}{%
+           family={Blank},
+           familyi={B\bibinitperiod},
+           given={Jiří},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c4c890ccc8f684c2ab49072d00505106}{%
+           family={Exner},
+           familyi={E\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c66748e3a67b3be1e81efcb35df19e8a}{%
+           family={Havlíček},
+           familyi={H\bibinitperiod},
+           given={Miloslav},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {Czech}%
+      }
+      \list{location}{1}{%
+        {Praha}%
+      }
+      \list{publisher}{1}{%
+        {Univerzita Karlova}%
+      }
+      \strng{namehash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \strng{fullhash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \strng{bibnamehash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \strng{authorbibnamehash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \strng{authornamehash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \strng{authorfullhash}{bc2e113377fa60f09c8a0eb4abc7f765}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9788070665862}
+      \field{title}{Lineární operátory v kvantové fyzice}
+      \field{year}{1993}
+    \endentry
+    \entry{kitaev_quantum_1997}{article}{}
+      \name{author}{1}{}{%
+        {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi Yu},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{fullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{bibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
+      \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{31}
+      \field{issn}{0036-0279}
+      \field{journaltitle}{Russ. Math. Surv.}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{note}{Publisher: {IOP} Publishing}
+      \field{number}{6}
+      \field{shorttitle}{Quantum computations}
+      \field{title}{Quantum computations: algorithms and error correction}
+      \field{volume}{52}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{pages}{1191}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1070/RM1997v052n06ABEH002155
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1070/RM1997v052n06ABEH002155/meta
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1070/RM1997v052n06ABEH002155/meta
       \endverb
     \endentry
     \entry{cerezo_variational_2021}{article}{}
@@ -710,11 +767,10 @@
       \strng{authorbibnamehash}{aeb54beafe59128c13a6651991958563}
       \strng{authornamehash}{aeb54beafe59128c13a6651991958563}
       \strng{authorfullhash}{aeb54beafe59128c13a6651991958563}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Applications such as simulating complicated quantum systems or solving large-scale linear algebra problems are very challenging for classical computers due to the extremely high computational cost. Quantum computers promise a solution, although fault-tolerant quantum computers will likely not be available in the near future. Current quantum devices have serious constraints, including limited numbers of qubits and noise processes that limit circuit depth. Variational Quantum Algorithms ({VQAs}), which use a classical optimizer to train a parametrized quantum circuit, have emerged as a leading strategy to address these constraints. {VQAs} have now been proposed for essentially all applications that researchers have envisioned for quantum computers, and they appear to the best hope for obtaining quantum advantage. Nevertheless, challenges remain including the trainability, accuracy, and efficiency of {VQAs}. Here we overview the field of {VQAs}, discuss strategies to overcome their challenges, and highlight the exciting prospects for using them to obtain quantum advantage.}
       \field{day}{12}
       \field{eprinttype}{arxiv}
       \field{issn}{2522-5820}
@@ -723,13 +779,9 @@
       \field{number}{9}
       \field{shortjournal}{Nat Rev Phys}
       \field{title}{Variational Quantum Algorithms}
-      \field{urlday}{2}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
       \field{volume}{3}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{625\bibrangedash 644}
       \range{pages}{20}
       \verb{doi}
@@ -738,16 +790,12 @@
       \verb{eprint}
       \verb 2012.09265 [quant-ph, stat]
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\NXLJ9SR5\\Cerezo et al. - 2021 - Variational Quantum Algorithms.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\BFMB7X45\\2012.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2012.09265
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/2012.09265
       \endverb
-      \keyw{Computer Science - Machine Learning,Quantum Physics,Statistics - Machine Learning}
     \endentry
     \entry{kitaev_quantum_1995}{article}{}
       \name{author}{1}{}{%
@@ -766,30 +814,23 @@
       \strng{authorbibnamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authornamehash}{34266a35eedbd87dd79c5e408127a5e5}
       \strng{authorfullhash}{34266a35eedbd87dd79c5e408127a5e5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We present a polynomial quantum algorithm for the Abelian stabilizer problem which includes both factoring and the discrete logarithm. Thus we extend famous Shor's results. Our method is based on a procedure for measuring an eigenvalue of a unitary operator. Another application of this procedure is a polynomial quantum Fourier transform algorithm for an arbitrary finite Abelian group. The paper also contains a rather detailed introduction to the theory of quantum computation.}
       \field{day}{20}
       \field{eprinttype}{arxiv}
       \field{month}{11}
       \field{number}{{arXiv}:quant-ph/9511026}
       \field{title}{Quantum measurements and the Abelian Stabilizer Problem}
-      \field{urlday}{8}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{1995}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.quant-ph/9511026
       \endverb
       \verb{eprint}
       \verb quant-ph/9511026
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\I7VIX9YZ\\Kitaev - 1995 - Quantum measurements and the Abelian Stabilizer Pr.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\GCJ7R2WF\\9511026.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/quant-ph/9511026
@@ -797,7 +838,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/quant-ph/9511026
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{mohammadbagherpoor_improved_2019}{article}{}
       \name{author}{6}{}{%
@@ -845,26 +885,18 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Quantum phase estimation ({QPE}) is one of the core algorithms for quantum computing. It has been extensively studied and applied in a variety of quantum applications such as the Shor's factoring algorithm, quantum sampling algorithms and the calculation of the eigenvalues of unitary matrices. The {QPE} algorithm has been combined with Kitaev's algorithm and the inverse quantum Fourier transform ({IQFT}) which are utilized as a fundamental component of such quantum algorithms. In this paper, we explore the computational challenges of implementing {QPE} algorithms on noisy intermediate-scale quantum ({NISQ}) machines using the {IBM} Q Experience (e.g., the {IBMQX}4, 5-qubit quantum computing hardware platform). Our experimental results indicate that the accuracy of finding the phase using these {QPE} algorithms is severely constrained by the {NISQ} computer's physical characteristics such as coherence time and error rates. To mitigate these physical limitations, we propose implementing a modified solution by reducing the number of controlled rotation gates and phase shift operations, thereby increasing the accuracy of the finding phase in near-term quantum computers.}
       \field{day}{23}
       \field{eprinttype}{arxiv}
       \field{month}{10}
       \field{number}{{arXiv}:1910.11696}
       \field{title}{An Improved Implementation Approach for Quantum Phase Estimation on Quantum Computers}
-      \field{urlday}{8}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{2019}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.1910.11696
       \endverb
       \verb{eprint}
       \verb 1910.11696 [quant-ph]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\KLXYGU6C\\Mohammadbagherpoor et al. - 2019 - An Improved Implementation Approach for Quantum Ph.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\ZNIFSX2Q\\1910.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1910.11696
@@ -872,7 +904,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/1910.11696
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{shankar_principles_1994}{book}{}
       \name{author}{1}{}{%
@@ -894,24 +925,17 @@
       \strng{authorbibnamehash}{da264ccf69a35c1d68643cdd7b991c43}
       \strng{authornamehash}{da264ccf69a35c1d68643cdd7b991c43}
       \strng{authorfullhash}{da264ccf69a35c1d68643cdd7b991c43}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1-4757-0578-2}
       \field{langid}{english}
       \field{title}{Principles of Quantum Mechanics}
-      \field{urlday}{11}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{1994}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.1007/978-1-4757-0576-8
-      \endverb
-      \verb{file}
-      \verb Full Text:C\:\\Users\\stepa\\Zotero\\storage\\UNUJDJUG\\Shankar - 1994 - Principles of Quantum Mechanics.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://link.springer.com/10.1007/978-1-4757-0576-8
@@ -919,7 +943,6 @@
       \verb{url}
       \verb https://link.springer.com/10.1007/978-1-4757-0576-8
       \endverb
-      \keyw{classical mechanics,Degrees of freedom,Dirac equation,hydrogen atom,quantum mechanics,quantum theory,scattering,scattering theory}
     \endentry
     \entry{bhoy_shell-model_2024}{misc}{}
       \name{author}{2}{}{%
@@ -943,31 +966,23 @@
       \strng{authorbibnamehash}{e3369f2a95a82060588d44227bf4c18c}
       \strng{authornamehash}{e3369f2a95a82060588d44227bf4c18c}
       \strng{authorfullhash}{e3369f2a95a82060588d44227bf4c18c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This study presents a simulated quantum computing approach for the investigation into the shell-model energy levels of \${\textasciicircum}\{58\}\$Ni through the application of the variational eigensolver ({VQE}) method in combination with a problem-specific ansatz. The primary objective is to achieve a fully accurate low-lying energy spectrum of \${\textasciicircum}\{58\}\$Ni. The chosen isotope, \${\textasciicircum}\{58\}\$Ni is particularly interesting in nuclear physics through its role in astrophysical reactions while also being a simple but not-trivial nucleus for shell-model study, it being two particles outside a closed shell. Our ansatz, along with the {VQE} method are shown to be able to reproduce exact energy values for the ground state and first and second excited states. We compare a classical shell model code, the values obtained by diagonalization of the Hamiltonian after qubit mapping, and a noiseless simulated ansatz+{VQE} simulation. The exact agreement between classical and qubit-mapped diagonalisation shows the correctness of our method, and the high accuracy of the simulation means that the ansatz is suitable to allow a full reconstruction of the full nuclear wave function.}
       \field{day}{29}
       \field{eprinttype}{arxiv}
       \field{month}{2}
       \field{note}{version: 2}
       \field{number}{{arXiv}:2402.15577}
       \field{title}{Shell-model study of \${\textasciicircum}\{58\}\$Ni using quantum computing algorithm}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{2024}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.2402.15577
       \endverb
       \verb{eprint}
       \verb 2402.15577 [nucl-th]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\HBYLE3ER\\Bhoy and Stevenson - 2024 - Shell-model study of \$^ 58 \$Ni using quantum compu.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\DM8WXFHL\\2402.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2402.15577
@@ -975,7 +990,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/2402.15577
       \endverb
-      \keyw{Nuclear Theory}
     \endentry
     \entry{kiss_quantum_2022}{article}{}
       \name{author}{6}{}{%
@@ -1016,11 +1030,10 @@
       \strng{authorbibnamehash}{e2769ec77619ddffb271dc58e0744383}
       \strng{authornamehash}{e2769ec77619ddffb271dc58e0744383}
       \strng{authorfullhash}{e2769ec77619ddffb271dc58e0744383}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The variational quantum eigensolver ({VQE}) is an algorithm to compute ground and excited state energy of quantum many-body systems. A key component of the algorithm and an active research area is the construction of a parametrized trial wavefunction -- a so called variational ansatz. The wavefunction parametrization should be expressive enough, i.e. represent the true eigenstate of a quantum system for some choice of parameter values. On the other hand, it should be trainable, i.e. the number of parameters should not grow exponentially with the size of the system. Here, we apply {VQE} to the problem of finding ground and excited state energies of the odd-odd nucleus \${\textasciicircum}6\$Li. We study the effects of ordering fermionic excitation operators in the unitary coupled clusters ansatz on the {VQE} algorithm convergence by using only operators preserving the \$J\_z\$ quantum number. The accuracy is improved by two order of magnitude in the case of descending order. We first compute optimal ansatz parameter values using a classical state-vector simulator with arbitrary measurement accuracy and then use those values to evaluate energy eigenstates of \${\textasciicircum}6\$Li on a superconducting quantum chip from {IBM}. We post-process the results by using error mitigation techniques and are able to reproduce the exact energy with an error of 3.8\% and 0.1\% for the ground state and for the first excited state of \${\textasciicircum}6\$Li, respectively.}
       \field{day}{29}
       \field{eprinttype}{arxiv}
       \field{issn}{2469-9985, 2469-9993}
@@ -1029,13 +1042,9 @@
       \field{number}{3}
       \field{shortjournal}{Phys. Rev. C}
       \field{title}{Quantum computing of the \${\textasciicircum}6\$Li nucleus via ordered unitary coupled clusters}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{106}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{034325}
       \range{pages}{1}
       \verb{doi}
@@ -1044,16 +1053,12 @@
       \verb{eprint}
       \verb 2205.00864 [nucl-th]
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\N7BIFTKW\\Kiss et al. - 2022 - Quantum computing of the \$^6\$Li nucleus via ordere.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\2AM9SWBV\\2205.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2205.00864
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/2205.00864
       \endverb
-      \keyw{Nuclear Theory}
     \endentry
     \entry{jordan_uber_1928}{article}{}
       \name{author}{2}{}{%
@@ -1078,7 +1083,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Die Arbeit enthält eine Fortsetzung der kürzlich von einem der Verfasser vorgelegten Note „Zur Quantenmechanik der Gasentartung“, deren Ergebnisse hier wesentlich erweitert werden. Es handelt sich darum, ein ideales oder nichtideales, dem Paulischen Äquivalenzverbot unterworfenes Gas zu beschreiben mit Begriffen, die keinen Bezug nehmen auf den abstrakten Koordinatenraum der Atomgesamtheit des Gases, sondern nur den gewöhnlichen dreidimensionalen Raum benutzen. Das wird ermöglicht durch die Darstellung des Gases vermittelst eines gequantelten dreidimensionalen Wellenfeldes, wobei die besonderen nichtkommutativen Multiplikationseigenschaften der Wellenamplitude gleichzeitig für die Existenz korpus-kularer Gasatome und für die Gültigkeit des Paulischen Äquivalenzverbots verantwortlich sind. Die Einzelheiten der Theorie besitzen enge Analogien zu der entsprechenden Theorie für Einsteinsche ideale oder nichtideale Gase, wie sie von Dirac, Klein und Jordan ausgeführt wurde.}
       \field{day}{1}
       \field{issn}{0044-3328}
       \field{journaltitle}{Zeitschrift für Physik}
@@ -1087,20 +1091,13 @@
       \field{number}{9}
       \field{shortjournal}{Z. Physik}
       \field{title}{Über das Paulische Äquivalenzverbot}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{47}
       \field{year}{1928}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{631\bibrangedash 651}
       \range{pages}{21}
       \verb{doi}
       \verb 10.1007/BF01331938
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\MACALUAN\\Jordan and Wigner - 1928 - Über das Paulische Äquivalenzverbot.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1007/BF01331938
@@ -1132,7 +1129,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We define a model of quantum computation with local fermionic modes ({LFMs}) -- sites which can be either empty or occupied by a fermion. With the standard correspondence between the Foch space of \$m\$ {LFMs} and the Hilbert space of \$m\$ qubits, simulation of one fermionic gate takes \$O(m)\$ qubit gates and vice versa. We show that using different encodings, the simulation cost can be reduced to \$O({\textbackslash}log m)\$ and a constant, respectively. Nearest-neighbors fermionic gates on a graph of bounded degree can be simulated at a constant cost. A universal set of fermionic gates is found. We also study computation with Majorana fermions which are basically halves of {LFMs}. Some connection to qubit quantum codes is made.}
       \field{eprinttype}{arxiv}
       \field{issn}{00034916}
       \field{journaltitle}{Annals of Physics}
@@ -1140,13 +1136,9 @@
       \field{number}{1}
       \field{shortjournal}{Annals of Physics}
       \field{title}{Fermionic quantum computation}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{298}
       \field{year}{2002}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{210\bibrangedash 226}
       \range{pages}{17}
       \verb{doi}
@@ -1155,16 +1147,12 @@
       \verb{eprint}
       \verb quant-ph/0003137
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\TYI4GADE\\Bravyi and Kitaev - 2002 - Fermionic quantum computation.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\HX53EIIK\\0003137.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/quant-ph/0003137
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/quant-ph/0003137
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{gokhale_minimizing_2019}{misc}{}
       \name{author}{8}{}{%
@@ -1222,27 +1210,19 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Variational quantum eigensolver ({VQE}) is a promising algorithm suitable for near-term quantum machines. {VQE} aims to approximate the lowest eigenvalue of an exponentially sized matrix in polynomial time. It minimizes quantum resource requirements both by co-processing with a classical processor and by structuring computation into many subproblems. Each quantum subproblem involves a separate state preparation terminated by the measurement of one Pauli string. However, the number of such Pauli strings scales as \$N{\textasciicircum}4\$ for typical problems of interest--a daunting growth rate that poses a serious limitation for emerging applications such as quantum computational chemistry. We introduce a systematic technique for minimizing requisite state preparations by exploiting the simultaneous measurability of partitions of commuting Pauli strings. Our work encompasses algorithms for efficiently approximating a {MIN}-{COMMUTING}-{PARTITION}, as well as a synthesis tool for compiling simultaneous measurement circuits. For representative problems, we achieve 8-30x reductions in state preparations, with minimal overhead in measurement circuit cost. We demonstrate experimental validation of our techniques by estimating the ground state energy of deuteron on an {IBM} Q 20-qubit machine. We also investigate the underlying statistics of simultaneous measurement and devise an adaptive strategy for mitigating harmful covariance terms.}
       \field{day}{31}
       \field{eprinttype}{arxiv}
       \field{month}{7}
       \field{note}{version: 1}
       \field{number}{{arXiv}:1907.13623}
       \field{title}{Minimizing State Preparations in Variational Quantum Eigensolver by Partitioning into Commuting Families}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{2019}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.1907.13623
       \endverb
       \verb{eprint}
       \verb 1907.13623 [quant-ph]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\KAN45J4K\\Gokhale et al. - 2019 - Minimizing State Preparations in Variational Quant.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\XPPXICUV\\1907.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1907.13623
@@ -1250,7 +1230,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/1907.13623
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{huggins_efficient_2021}{article}{}
       \name{author}{7}{}{%
@@ -1300,7 +1279,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Variational algorithms are a promising paradigm for utilizing near-term quantum devices for modeling electronic states of molecular systems. However, previous bounds on the measurement time required have suggested that the application of these techniques to larger molecules might be infeasible. We present a measurement strategy based on a low-rank factorization of the two-electron integral tensor. Our approach provides a cubic reduction in term groupings over prior state-of-the-art and enables measurement times three orders of magnitude smaller than those suggested by commonly referenced bounds for the largest systems we consider. Although our technique requires execution of a linear-depth circuit prior to measurement, this is compensated for by eliminating challenges associated with sampling nonlocal Jordan–Wigner transformed operators in the presence of measurement error, while enabling a powerful form of error mitigation based on efficient postselection. We numerically characterize these benefits with noisy quantum circuit simulations for ground-state energies of strongly correlated electronic systems.}
       \field{day}{5}
       \field{issn}{2056-6387}
       \field{journaltitle}{npj Quantum Information}
@@ -1310,20 +1288,13 @@
       \field{number}{1}
       \field{shortjournal}{npj Quantum Inf}
       \field{title}{Efficient and noise resilient measurements for quantum chemistry on near-term quantum computers}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{7}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{1\bibrangedash 9}
       \range{pages}{9}
       \verb{doi}
       \verb 10.1038/s41534-020-00341-7
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\ZE8SW6IR\\Huggins et al. - 2021 - Efficient and noise resilient measurements for qua.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://www.nature.com/articles/s41534-020-00341-7
@@ -1331,7 +1302,6 @@
       \verb{url}
       \verb https://www.nature.com/articles/s41534-020-00341-7
       \endverb
-      \keyw{Quantum chemistry,Quantum simulation}
     \endentry
     \entry{hamamura_efficient_2020}{article}{}
       \name{author}{2}{}{%
@@ -1352,11 +1322,10 @@
       \strng{authorbibnamehash}{aaded3c2901751c661dc782b9b373405}
       \strng{authornamehash}{aaded3c2901751c661dc782b9b373405}
       \strng{authorfullhash}{aaded3c2901751c661dc782b9b373405}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The advent of cloud quantum computing has led to the rapid development of quantum algorithms. In particular, it is necessary to study variational quantum-classical hybrid algorithms, which are executable on noisy intermediate-scale quantum ({NISQ}) computers. Evaluations of observables appear frequently in the variational quantum-classical hybrid algorithms for {NISQ} computers. By speeding up the evaluation of observables, it is possible to realize a faster algorithm and save resources of quantum computers. Grouping of observables with separable measurements has been conventionally used, and the grouping with entangled measurements has also been proposed recently by several teams. In this paper, we show that entangled measurements enhance the efficiency of evaluation of observables, both theoretically and experimentally, by taking into account the covariance effect, which may affect the quality of evaluation of observables. We also propose using a part of entangled measurements for grouping to keep the depth of extra gates constant. Our proposed method is expected to be used in conjunction with other related studies. We hope that entangled measurements would become crucial resources, not only for joint measurements but also for quantum information processing.}
       \field{day}{19}
       \field{issn}{2056-6387}
       \field{journaltitle}{npj Quantum Information}
@@ -1366,20 +1335,13 @@
       \field{number}{1}
       \field{shortjournal}{npj Quantum Inf}
       \field{title}{Efficient evaluation of quantum observables using entangled measurements}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{6}
       \field{year}{2020}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{1\bibrangedash 8}
       \range{pages}{8}
       \verb{doi}
       \verb 10.1038/s41534-020-0284-2
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\PZUKWYVI\\Hamamura and Imamichi - 2020 - Efficient evaluation of quantum observables using .pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://www.nature.com/articles/s41534-020-0284-2
@@ -1387,7 +1349,6 @@
       \verb{url}
       \verb https://www.nature.com/articles/s41534-020-0284-2
       \endverb
-      \keyw{Information theory and computation,Quantum information,Quantum simulation,Qubits}
     \endentry
     \entry{gokhale_on3_2019}{article}{}
       \name{author}{2}{}{%
@@ -1411,30 +1372,22 @@
       \strng{authorbibnamehash}{45dd01468e67925ad43b6b350954d5f2}
       \strng{authornamehash}{45dd01468e67925ad43b6b350954d5f2}
       \strng{authorfullhash}{45dd01468e67925ad43b6b350954d5f2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Variational Quantum Eigensolver ({VQE}) is a promising algorithm for near-term quantum machines. It can be used to estimate the ground state energy of a molecule by performing separate measurements of \$O(N{\textasciicircum}4)\$ terms. Several recent papers observed that this scaling may be reducible to \$O(N{\textasciicircum}3)\$ by partitioning the terms into linear-sized commuting families that can be measured simultaneously. We confirm these empirical observations by studying the {MIN}-{COMMUTING}-{PARTITION} problem at the level of the fermionic Hamiltonian and its encoding into qubits. Moreover, we provide a fast, pre-computable procedure for creating linearly-sized commuting partitions by solving a round-robin scheduling problem via flow networks.}
       \field{day}{30}
       \field{eprinttype}{arxiv}
       \field{month}{8}
       \field{number}{{arXiv}:1908.11857}
       \field{title}{\$O(N{\textasciicircum}3)\$ Measurement Cost for Variational Quantum Eigensolver on Molecular Hamiltonians}
-      \field{urlday}{6}
-      \field{urlmonth}{5}
-      \field{urlyear}{2024}
       \field{year}{2019}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.1908.11857
       \endverb
       \verb{eprint}
       \verb 1908.11857 [quant-ph]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\ZPFDLDY6\\Gokhale and Chong - 2019 - \$O(N^3)\$ Measurement Cost for Variational Quantum .pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\VDE53X4Q\\1908.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1908.11857
@@ -1442,7 +1395,6 @@
       \verb{url}
       \verb http://arxiv.org/abs/1908.11857
       \endverb
-      \keyw{Quantum Physics}
     \endentry
     \entry{bonet-monroig_performance_2023}{article}{}
       \name{author}{8}{}{%
@@ -1493,11 +1445,10 @@
       \strng{authorbibnamehash}{a3a546d464875ba3a5d6cac4d561b1e8}
       \strng{authornamehash}{a3a546d464875ba3a5d6cac4d561b1e8}
       \strng{authorfullhash}{a3a546d464875ba3a5d6cac4d561b1e8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Variational quantum algorithms ({VQAs}) offer a promising path toward using near-term quantum hardware for applications in academic and industrial research. These algorithms aim to find approximate solutions to quantum problems by optimizing a parametrized quantum circuit using a classical optimization algorithm. A successful {VQA} requires fast and reliable classical optimization algorithms. Understanding and optimizing how off-the-shelf optimization methods perform in this context is important for the future of the field. In this work, we study the performance of four commonly used gradient-free optimization methods [sequential least-squares quadratic programming, constrained optimization by linear approximations, the covariance matrix adaptation evolutionary strategy ({CMA}-{ES}), and the simultaneous perturbation stochastic approximation ({SPSA})] to find ground-state energies of a range of small chemistry and material science problems. We test a telescoping sampling scheme (where the accuracy of the cost-function estimate provided to the optimizer is increased as the optimization converges) for all methods, demonstrating mixed results across our range of optimizers and problems chosen. We further hyperparameter tune two of the four optimizers ({CMA}-{ES} and {SPSA}) across a large range of models and demonstrate that with appropriate hyperparameter tuning, {CMA}-{ES} is competitive with and sometimes outperforms {SPSA} (which is not observed in the absence of hyperparameter tuning). Finally, we investigate the ability of an optimizer to beat the “sampling-noise floor” given by the sampling noise of each cost-function estimate provided to the optimizer. Our results demonstrate the necessity for tailoring and hyperparameter tuning known optimization techniques for inherently noisy variational quantum algorithms and that the variational landscape that one finds in a {VQA} is highly problem and system dependent. This provides guidance for future implementations of these algorithms in experiments.}
       \field{day}{7}
       \field{journaltitle}{Physical Review A}
       \field{month}{3}
@@ -1505,20 +1456,13 @@
       \field{number}{3}
       \field{shortjournal}{Phys. Rev. A}
       \field{title}{Performance comparison of optimization methods on variational quantum algorithms}
-      \field{urlday}{1}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
       \field{volume}{107}
       \field{year}{2023}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{032407}
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevA.107.032407
-      \endverb
-      \verb{file}
-      \verb APS Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\PC3LIQU3\\PhysRevA.107.html:text/html;Full Text:C\:\\Users\\stepa\\Zotero\\storage\\NC6RJRVN\\Bonet-Monroig et al. - 2023 - Performance comparison of optimization methods on .pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://link.aps.org/doi/10.1103/PhysRevA.107.032407
@@ -1556,20 +1500,13 @@
       \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19273892002}
       \field{number}{20}
       \field{title}{Zur Quantentheorie der Molekeln}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{389}
       \field{year}{1927}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{457\bibrangedash 484}
       \range{pages}{28}
       \verb{doi}
       \verb 10.1002/andp.19273892002
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\GH8QQP3M\\Born and Oppenheimer - 1927 - Zur Quantentheorie der Molekeln.pdf:application/pdf;Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\UDHMSIZQ\\andp.html:text/html
       \endverb
       \verb{urlraw}
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19273892002
@@ -1606,20 +1543,15 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We study the performance of permanent states (the bosonic counterpart of the Slater determinant state) as approximating functions for bosons, with the intention to develop variational methods based upon them. For a system of \$N\$ identical bosons, a permanent state is constructed by taking a set of \$N\$ arbitrary (not necessarily orthonormal) single-particle orbitals, forming their product and then symmetrizing it. It is found that for the one-dimensional Bose-Hubbard model with the periodic boundary condition and at unit filling, the exact ground state can be very well approximated by a permanent state, in that the permanent state has high overlap (at least 0.96 even for 12 particles and 12 sites) with the exact ground state and can reproduce both the ground state energy and the single-particle correlators to high precision. For a generic model, we have devised a greedy algorithm to find the optimal set of single-particle orbitals to minimize the variational energy or maximize the overlap with a target state. It turns out that quite often the ground state of a bosonic system can be well approximated by a permanent state by all the criterions of energy, overlap, and correlation functions. And even if the error is apparent, it can often be remedied by including more configurations, i.e., by allowing the variational wave function to be a combination of multiple permanent states. The algorithm is used to study the stability of a two-particle system, with great success. All these suggest that permanent states are very effective as variational wave functions for bosonic systems, and hence deserve further studies.}
       \field{eprinttype}{arxiv}
       \field{issn}{03784371}
       \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
       \field{month}{8}
       \field{shortjournal}{Physica A: Statistical Mechanics and its Applications}
       \field{title}{Permanent variational wave functions for bosons}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{599}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{127399}
       \range{pages}{1}
       \verb{doi}
@@ -1628,16 +1560,12 @@
       \verb{eprint}
       \verb 2106.14679 [cond-mat]
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\NKDMV6B8\\Zhang et al. - 2022 - Permanent variational wave functions for bosons.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\753WRKHN\\2106.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/2106.14679
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/2106.14679
       \endverb
-      \keyw{Condensed Matter - Quantum Gases}
     \endentry
     \entry{abrams_simulation_1997}{article}{}
       \name{author}{2}{}{%
@@ -1662,7 +1590,6 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We provide fast algorithms for simulating many-body Fermi systems on a universal quantum computer. Both first and second quantized descriptions are considered, and the relative computational complexities are determined in each case. In order to accommodate fermions using a first quantized Hamiltonian, an efficient quantum algorithm for antisymmetrization is given. Finally, a simulation of the Hubbard model is discussed in detail.}
       \field{day}{29}
       \field{journaltitle}{Physical Review Letters}
       \field{month}{9}
@@ -1670,20 +1597,13 @@
       \field{number}{13}
       \field{shortjournal}{Phys. Rev. Lett.}
       \field{title}{Simulation of Many-Body Fermi Systems on a Universal Quantum Computer}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{79}
       \field{year}{1997}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{2586\bibrangedash 2589}
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/PhysRevLett.79.2586
-      \endverb
-      \verb{file}
-      \verb APS Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\K82YR79E\\PhysRevLett.79.html:text/html;Full Text PDF:C\:\\Users\\stepa\\Zotero\\storage\\PYLJFQJG\\Abrams and Lloyd - 1997 - Simulation of Many-Body Fermi Systems on a Univers.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.2586
@@ -1692,67 +1612,1532 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevLett.79.2586
       \endverb
     \endentry
-    \entry{sim_expressibility_2019}{article}{}
+    \entry{mcardle_quantum_2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3daf73fd06a4958752298e706cc55a5a}{%
+           family={{McArdle}},
+           familyi={M\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c3acfc5e323c389790b828fbf6955f09}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={Suguru},
+           giveni={S\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b10a34e16a501939634880eade0cec5e}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Simon\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=001b5a60b43cad93e93a32a46ae0c874}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f29953c0d828b365afbef814aaad6df}
+      \strng{fullhash}{5f29953c0d828b365afbef814aaad6df}
+      \strng{bibnamehash}{5f29953c0d828b365afbef814aaad6df}
+      \strng{authorbibnamehash}{5f29953c0d828b365afbef814aaad6df}
+      \strng{authornamehash}{5f29953c0d828b365afbef814aaad6df}
+      \strng{authorfullhash}{5f29953c0d828b365afbef814aaad6df}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{month}{3}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{1}
+      \field{shortjournal}{Rev. Mod. Phys.}
+      \field{title}{Quantum computational chemistry}
+      \field{volume}{92}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{015003}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.92.015003
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.92.015003
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.92.015003
+      \endverb
+    \endentry
+    \entry{altland_condensed_2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0e8283059ab66548e6a111f680ea5d02}{%
+           family={Altland},
+           familyi={A\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3cb61c02c5e5f84d82da5b094ab84adf}{%
+           family={Simons},
+           familyi={S\bibinitperiod},
+           given={Ben\bibnamedelima D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \strng{fullhash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \strng{bibnamehash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \strng{authorbibnamehash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \strng{authornamehash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \strng{authorfullhash}{ef0b9c2e0d67fbcf0d86ec48c63e8a05}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Condensed Matter Field Theory}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1017/CBO9780511789984
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/condensed-matter-field-theory/0A8DE6503ED868D96985D9E7847C63FF
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/condensed-matter-field-theory/0A8DE6503ED868D96985D9E7847C63FF
+      \endverb
+    \endentry
+    \entry{hylleraas_numerische_1930}{article}{}
+      \name{author}{2}{}{%
+        {{hash=13be4dd59a4b40472763b3ddd7813571}{%
+           family={Hylleraas},
+           familyi={H\bibinitperiod},
+           given={Egil\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8f9db622dd1ded3cc6322efd9a0d464b}{%
+           family={Undheim},
+           familyi={U\bibinitperiod},
+           given={Bjarne},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{23946b15d9f42fe8b79a194a3620c604}
+      \strng{fullhash}{23946b15d9f42fe8b79a194a3620c604}
+      \strng{bibnamehash}{23946b15d9f42fe8b79a194a3620c604}
+      \strng{authorbibnamehash}{23946b15d9f42fe8b79a194a3620c604}
+      \strng{authornamehash}{23946b15d9f42fe8b79a194a3620c604}
+      \strng{authorfullhash}{23946b15d9f42fe8b79a194a3620c604}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0044-3328}
+      \field{journaltitle}{Zeitschrift für Physik}
+      \field{langid}{german}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Z. Physik}
+      \field{title}{Numerische Berechnung der 2S-Terme von Ortho- und Par-Helium}
+      \field{volume}{65}
+      \field{year}{1930}
+      \field{dateera}{ce}
+      \field{pages}{759\bibrangedash 772}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/BF01397263
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01397263
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01397263
+      \endverb
+    \endentry
+    \entry{macdonald_successive_1933}{article}{}
+      \name{author}{1}{}{%
+        {{hash=078f9c3c3c3ba76f3eb8d5941ea82210}{%
+           family={{MacDonald}},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi K.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \strng{fullhash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \strng{bibnamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \strng{authorbibnamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \strng{authornamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \strng{authorfullhash}{078f9c3c3c3ba76f3eb8d5941ea82210}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{Physical Review}
+      \field{month}{5}
+      \field{note}{Publisher: American Physical Society}
+      \field{number}{10}
+      \field{shortjournal}{Phys. Rev.}
+      \field{title}{Successive Approximations by the Rayleigh-Ritz Variation Method}
+      \field{volume}{43}
+      \field{year}{1933}
+      \field{dateera}{ce}
+      \field{pages}{830\bibrangedash 833}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRev.43.830
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.43.830
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.43.830
+      \endverb
+    \endentry
+    \entry{moll_optimizing_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5fc8de144ce971957960d12305210a47}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Nikolaj},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7af9763600396e0be94b19399addda32}{%
+           family={Fuhrer},
+           familyi={F\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=44080c877961672622815c826dfd215c}{%
+           family={Staar},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=45d1289800b8218091acef2735bca88d}{%
+           family={Tavernelli},
+           familyi={T\bibinitperiod},
+           given={Ivano},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \strng{fullhash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \strng{bibnamehash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \strng{authorbibnamehash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \strng{authornamehash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \strng{authorfullhash}{363b48d8009bbbcecdebcab2f6b60ef0}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1751-8121}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{note}{Publisher: {IOP} Publishing}
+      \field{number}{29}
+      \field{shortjournal}{J. Phys. A: Math. Theor.}
+      \field{title}{Optimizing qubit resources for quantum chemistry simulations in second quantization on a quantum computer}
+      \field{volume}{49}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{295301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1751-8113/49/29/295301
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1088/1751-8113/49/29/295301
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1088/1751-8113/49/29/295301
+      \endverb
+    \endentry
+    \entry{setia_reducing_2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=abfb3de829a93fdf1dbd5bcac06ef044}{%
+           family={Setia},
+           familyi={S\bibinitperiod},
+           given={Kanav},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3792745c8c6ea67434f706e52ebcc27f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=af2cff9e3c8cde2749104c6e1a1a9a8d}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Julia\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=74d05fb977698256fa6985ec3e6c490b}{%
+           family={Mezzacapo},
+           familyi={M\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b7efcd916178740dd90aedc3309d2dca}{%
+           family={Pistoia},
+           familyi={P\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b351387558a5b335a119ac26050f7777}{%
+           family={Whitfield},
+           familyi={W\bibinitperiod},
+           given={James\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6378a52ad9ba5d84606e03906479162e}
+      \strng{fullhash}{6378a52ad9ba5d84606e03906479162e}
+      \strng{bibnamehash}{6378a52ad9ba5d84606e03906479162e}
+      \strng{authorbibnamehash}{6378a52ad9ba5d84606e03906479162e}
+      \strng{authornamehash}{6378a52ad9ba5d84606e03906479162e}
+      \strng{authorfullhash}{6378a52ad9ba5d84606e03906479162e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{issn}{1549-9618}
+      \field{journaltitle}{Journal of Chemical Theory and Computation}
+      \field{month}{10}
+      \field{note}{Publisher: American Chemical Society}
+      \field{number}{10}
+      \field{shortjournal}{J. Chem. Theory Comput.}
+      \field{title}{Reducing Qubit Requirements for Quantum Simulations Using Molecular Point Group Symmetries}
+      \field{volume}{16}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{6091\bibrangedash 6097}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.0c00113
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.0c00113
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.0c00113
+      \endverb
+    \endentry
+    \entry{seeley_bravyi-kitaev_2012}{article}{}
       \name{author}{3}{}{%
+        {{hash=27b1dc249916174931b8db4c16a4b788}{%
+           family={Seeley},
+           familyi={S\bibinitperiod},
+           given={Jacob\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=215130e674b83860f71703a7f041c415}{%
+           family={Richard},
+           familyi={R\bibinitperiod},
+           given={Martin\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2d8133b5eb867e28af9ca9ea41105b5c}{%
+           family={Love},
+           familyi={L\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \strng{fullhash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \strng{bibnamehash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \strng{authorbibnamehash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \strng{authornamehash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \strng{authorfullhash}{ddffcb998f30d67fc879a7af0904dfbc}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{12}
+      \field{number}{22}
+      \field{shortjournal}{The Journal of Chemical Physics}
+      \field{title}{The Bravyi-Kitaev transformation for quantum computation of electronic structure}
+      \field{volume}{137}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{224109}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4768229
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.4768229
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.4768229
+      \endverb
+    \endentry
+    \entry{bandyopadhyay_new_2001}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=71f8943474115bab89c30efca00d9ceb}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Somshubhro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5596897b68b0278062f2a62b087587d6}{%
+           family={Boykin},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi Oscar},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=204fcdbd72717386a706abf8637b47ca}{%
+           family={Roychowdhury},
+           familyi={R\bibinitperiod},
+           given={Vwani},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3899b2f0ab9ead90771ae1929a7d11ed}{%
+           family={Vatan},
+           familyi={V\bibinitperiod},
+           given={Farrokh},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \strng{fullhash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \strng{bibnamehash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \strng{authorbibnamehash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \strng{authornamehash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \strng{authorfullhash}{a0ff7cd5994d5aa716d61eb37ddb5044}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{eprinttype}{arxiv}
+      \field{month}{9}
+      \field{number}{{arXiv}:quant-ph/0103162}
+      \field{title}{A new proof for the existence of mutually unbiased bases}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.quant-ph/0103162
+      \endverb
+      \verb{eprint}
+      \verb quant-ph/0103162
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/quant-ph/0103162
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/quant-ph/0103162
+      \endverb
+      \keyw{Quantum Physics}
+    \endentry
+    \entry{kubale_graph_2004}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f1bacdb62c2f9268c93be3b003a9d856}{%
+           family={Kubale},
+           familyi={K\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \strng{fullhash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \strng{bibnamehash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \strng{authorbibnamehash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \strng{authornamehash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \strng{authorfullhash}{f1bacdb62c2f9268c93be3b003a9d856}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Advancing research. Creating connections.}
+      \field{langid}{english}
+      \field{note}{{ISBN}: 9780821834589 9780821856871 9780821879429 {ISSN}: 1098-3627, 0271-4132 Publisher: American Mathematical Society Series: Contemporary Mathematics Volume: 352}
+      \field{title}{Graph Colorings}
+      \field{titleaddon}{American Mathematical Society}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1090/conm/352
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ams.org/conm/352/
+      \endverb
+      \verb{url}
+      \verb https://www.ams.org/conm/352/
+      \endverb
+    \endentry
+    \entry{jena_pauli_2019}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=ecd02ea72d6f04175388b273f1d1a85d}{%
+           family={Jena},
+           familyi={J\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b7c9c996251132d4948a92b0f0af94c7}{%
+           family={Genin},
+           familyi={G\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cac498e264a2fdb0a8c4dd3e95c92055}{%
+           family={Mosca},
+           familyi={M\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b155cb4094e5abda06f014f0b17f93d9}
+      \strng{fullhash}{b155cb4094e5abda06f014f0b17f93d9}
+      \strng{bibnamehash}{b155cb4094e5abda06f014f0b17f93d9}
+      \strng{authorbibnamehash}{b155cb4094e5abda06f014f0b17f93d9}
+      \strng{authornamehash}{b155cb4094e5abda06f014f0b17f93d9}
+      \strng{authorfullhash}{b155cb4094e5abda06f014f0b17f93d9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{eprinttype}{arxiv}
+      \field{month}{7}
+      \field{number}{{arXiv}:1907.07859}
+      \field{title}{Pauli Partitioning with Respect to Gate Sets}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1907.07859
+      \endverb
+      \verb{eprint}
+      \verb 1907.07859 [quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.07859
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.07859
+      \endverb
+    \endentry
+    \entry{verteletskyi_measurement_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5e8a83cc4f0f458d9b80f127569034a0}{%
+           family={Verteletskyi},
+           familyi={V\bibinitperiod},
+           given={Vladyslav},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6250c44e549f957b1a4d3e9d37bf2b10}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={Tzu-Ching},
+           giveni={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=445cd11464a7964a850da38cf166c1c3}{%
+           family={Izmaylov},
+           familyi={I\bibinitperiod},
+           given={Artur\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \strng{fullhash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \strng{bibnamehash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \strng{authorbibnamehash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \strng{authornamehash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \strng{authorfullhash}{855bb1f9dfac3956d9500ccefd1cd5f5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{eprinttype}{arxiv}
+      \field{issn}{0021-9606, 1089-7690}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{3}
+      \field{number}{12}
+      \field{title}{Measurement Optimization in the Variational Quantum Eigensolver Using a Minimum Clique Cover}
+      \field{volume}{152}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{124114}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5141458
+      \endverb
+      \verb{eprint}
+      \verb 1907.03358 [physics, physics:quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.03358
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.03358
+      \endverb
+    \endentry
+    \entry{yen_measuring_2020}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=6250c44e549f957b1a4d3e9d37bf2b10}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={Tzu-Ching},
+           giveni={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=5e8a83cc4f0f458d9b80f127569034a0}{%
+           family={Verteletskyi},
+           familyi={V\bibinitperiod},
+           given={Vladyslav},
+           giveni={V\bibinitperiod}}}%
+        {{hash=445cd11464a7964a850da38cf166c1c3}{%
+           family={Izmaylov},
+           familyi={I\bibinitperiod},
+           given={Artur\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{659c605213b7260482d4ce194308acd6}
+      \strng{fullhash}{659c605213b7260482d4ce194308acd6}
+      \strng{bibnamehash}{659c605213b7260482d4ce194308acd6}
+      \strng{authorbibnamehash}{659c605213b7260482d4ce194308acd6}
+      \strng{authornamehash}{659c605213b7260482d4ce194308acd6}
+      \strng{authorfullhash}{659c605213b7260482d4ce194308acd6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{eprinttype}{arxiv}
+      \field{month}{3}
+      \field{number}{{arXiv}:1907.09386}
+      \field{title}{Measuring all compatible operators in one series of a single-qubit measurements using unitary transformations}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1907.09386
+      \endverb
+      \verb{eprint}
+      \verb 1907.09386 [physics, physics:quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.09386
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.09386
+      \endverb
+    \endentry
+    \entry{izmaylov_unitary_2019}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=445cd11464a7964a850da38cf166c1c3}{%
+           family={Izmaylov},
+           familyi={I\bibinitperiod},
+           given={Artur\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=6250c44e549f957b1a4d3e9d37bf2b10}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={Tzu-Ching},
+           giveni={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=faea36dcd58a676597dc894319503c53}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5e8a83cc4f0f458d9b80f127569034a0}{%
+           family={Verteletskyi},
+           familyi={V\bibinitperiod},
+           given={Vladyslav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{a0a95d988d0dbfa4fc1e277259880415}
+      \strng{fullhash}{a0a95d988d0dbfa4fc1e277259880415}
+      \strng{bibnamehash}{a0a95d988d0dbfa4fc1e277259880415}
+      \strng{authorbibnamehash}{a0a95d988d0dbfa4fc1e277259880415}
+      \strng{authornamehash}{a0a95d988d0dbfa4fc1e277259880415}
+      \strng{authorfullhash}{a0a95d988d0dbfa4fc1e277259880415}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{eprinttype}{arxiv}
+      \field{month}{10}
+      \field{number}{{arXiv}:1907.09040}
+      \field{title}{Unitary partitioning approach to the measurement problem in the Variational Quantum Eigensolver method}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1907.09040
+      \endverb
+      \verb{eprint}
+      \verb 1907.09040 [physics, physics:quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.09040
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.09040
+      \endverb
+    \endentry
+    \entry{aaronson_improved_2004}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9709fc1390d4ac82cbad7750d99484bf}{%
+           family={Aaronson},
+           familyi={A\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7547b3f3d9b6b3aebccf1577d598b7de}{%
+           family={Gottesman},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9943320461a9d619cf69ec3845d2baf}
+      \strng{fullhash}{b9943320461a9d619cf69ec3845d2baf}
+      \strng{bibnamehash}{b9943320461a9d619cf69ec3845d2baf}
+      \strng{authorbibnamehash}{b9943320461a9d619cf69ec3845d2baf}
+      \strng{authornamehash}{b9943320461a9d619cf69ec3845d2baf}
+      \strng{authorfullhash}{b9943320461a9d619cf69ec3845d2baf}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{eprinttype}{arxiv}
+      \field{issn}{1050-2947, 1094-1622}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{11}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{Improved Simulation of Stabilizer Circuits}
+      \field{volume}{70}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{052328}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.70.052328
+      \endverb
+      \verb{eprint}
+      \verb quant-ph/0406196
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/quant-ph/0406196
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/quant-ph/0406196
+      \endverb
+      \keyw{Computer Science - Computational Complexity,Quantum Physics}
+    \endentry
+    \entry{mcclean_barren_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a253ddc1c4c24cde70238bd45dc9aeff}{%
+           family={{McClean}},
+           familyi={M\bibinitperiod},
+           given={Jarrod\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=915e31fc5958183d06275c3c3e811123}{%
+           family={Boixo},
+           familyi={B\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=80791f3c0f47c56afab9266e364f7223}{%
+           family={Smelyanskiy},
+           familyi={S\bibinitperiod},
+           given={Vadim\bibnamedelima N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7bb1dcf8a93d1ecc6f9531ece93ef1fa}{%
+           family={Babbush},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ddcc46c5456340da59be4077c7102a27}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Hartmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c126993002e7862bf539c09f21d34637}
+      \strng{fullhash}{c126993002e7862bf539c09f21d34637}
+      \strng{bibnamehash}{c126993002e7862bf539c09f21d34637}
+      \strng{authorbibnamehash}{c126993002e7862bf539c09f21d34637}
+      \strng{authornamehash}{c126993002e7862bf539c09f21d34637}
+      \strng{authorfullhash}{c126993002e7862bf539c09f21d34637}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Barren plateaus in quantum neural network training landscapes}
+      \field{volume}{9}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{4812}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-018-07090-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-018-07090-4
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-018-07090-4
+      \endverb
+    \endentry
+    \entry{holmes_connecting_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c95cd0e27fb42b050f33478bb1958072}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={Zoë},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=35717b460566bc605206c1fcaf8f9a6e}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cda5b62144e1a42caba2840a7224b769}{%
+           family={Cerezo},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d10bd053b9868d0af6fa53be761e3350}{%
+           family={Coles},
+           familyi={C\bibinitperiod},
+           given={Patrick\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a49c2b37d818ad6e191294b15ceb7654}
+      \strng{fullhash}{a49c2b37d818ad6e191294b15ceb7654}
+      \strng{bibnamehash}{a49c2b37d818ad6e191294b15ceb7654}
+      \strng{authorbibnamehash}{a49c2b37d818ad6e191294b15ceb7654}
+      \strng{authornamehash}{a49c2b37d818ad6e191294b15ceb7654}
+      \strng{authorfullhash}{a49c2b37d818ad6e191294b15ceb7654}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2691-3399}
+      \field{journaltitle}{{PRX} Quantum}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{{PRX} Quantum}
+      \field{title}{Connecting ansatz expressibility to gradient magnitudes and barren plateaus}
+      \field{volume}{3}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{010313}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PRXQuantum.3.010313
+      \endverb
+      \verb{eprint}
+      \verb 2101.02138 [quant-ph, stat]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2101.02138
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2101.02138
+      \endverb
+    \endentry
+    \entry{haug_optimal_2021}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=2036c43951475e8500d1ca024c7c00d7}{%
+           family={Haug},
+           familyi={H\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0b73059d83b70cdc0792682a2bbceca5}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \strng{fullhash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \strng{bibnamehash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \strng{authorbibnamehash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \strng{authornamehash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \strng{authorfullhash}{5976868cdd37daecfe123a2e8efcf4a2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{23}
+      \field{eprinttype}{arxiv}
+      \field{month}{6}
+      \field{number}{{arXiv}:2104.14543}
+      \field{title}{Optimal training of variational quantum algorithms without barren plateaus}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2104.14543
+      \endverb
+      \verb{eprint}
+      \verb 2104.14543 [quant-ph, stat]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2104.14543
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2104.14543
+      \endverb
+    \endentry
+    \entry{anand_quantum_2022}{article}{}
+      \name{author}{10}{}{%
+        {{hash=985f06ea28010d41b98c55dadf1cf6e5}{%
+           family={Anand},
+           familyi={A\bibinitperiod},
+           given={Abhinav},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8283ee2debdcc5b517827b1919c53983}{%
+           family={Schleich},
+           familyi={S\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=61ad4aae7993ccc474ac720659abf6c3}{%
+           family={Alperin-Lea},
+           familyi={A\bibinithyphendelim L\bibinitperiod},
+           given={Sumner},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cde9d4acfa1a21884c6b918adb763298}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Phillip\bibnamedelimb W.\bibnamedelimi K.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
         {{hash=f156a71a758735a1cfc0aab991a121e2}{%
            family={Sim},
            familyi={S\bibinitperiod},
            given={Sukin},
            giveni={S\bibinitperiod}}}%
-        {{hash=9831fd95cc14da373cb72142dd856b48}{%
-           family={Johnson},
-           familyi={J\bibinitperiod},
-           given={Peter\bibnamedelima D.},
-           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=099c0990d86eb9b4cfe762b761e4e8d7}{%
+        {{hash=48581615ea2a4d677f2cc7b177495975}{%
+           family={Díaz-Tinoco},
+           familyi={D\bibinithyphendelim T\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=107b712d1e1d0da12ec456450de4e440}{%
+           family={Kottmann},
+           familyi={K\bibinitperiod},
+           given={Jakob\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ce554a1b376ee1be7e82f136d4237255}{%
+           family={Degroote},
+           familyi={D\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=445cd11464a7964a850da38cf166c1c3}{%
+           family={Izmaylov},
+           familyi={I\bibinitperiod},
+           given={Artur\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
            family={Aspuru-Guzik},
            familyi={A\bibinithyphendelim G\bibinitperiod},
-           given={Alan},
+           given={Alán},
            giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{eaec6a08511453f522007e3455c57758}
-      \strng{fullhash}{eaec6a08511453f522007e3455c57758}
-      \strng{bibnamehash}{eaec6a08511453f522007e3455c57758}
-      \strng{authorbibnamehash}{eaec6a08511453f522007e3455c57758}
-      \strng{authornamehash}{eaec6a08511453f522007e3455c57758}
-      \strng{authorfullhash}{eaec6a08511453f522007e3455c57758}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \strng{namehash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \strng{fullhash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \strng{bibnamehash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \strng{authorbibnamehash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \strng{authornamehash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \strng{authorfullhash}{4a2595fd86389db8fd9a901e7617f7aa}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Parameterized quantum circuits play an essential role in the performance of many variational hybrid quantum-classical ({HQC}) algorithms. One challenge in implementing such algorithms is to choose an effective circuit that well represents the solution space while maintaining a low circuit depth and number of parameters. To characterize and identify expressible, yet compact, parameterized circuits, we propose several descriptors, including measures of expressibility and entangling capability, that can be statistically estimated from classical simulations of parameterized quantum circuits. We compute these descriptors for different circuit structures, varying the qubit connectivity and selection of gates. From our simulations, we identify circuit fragments that perform well with respect to the descriptors. In particular, we quantify the substantial improvement in performance of two-qubit gates in a ring or all-to-all connected arrangement compared to that of those on a line. Furthermore, we quantify the improvement in expressibility and entangling capability achieved by sequences of controlled X-rotation gates compared to sequences of controlled Z-rotation gates. In addition, we investigate how expressibility "saturates" with increased circuit depth, finding that the rate and saturated-value appear to be distinguishing features of a parameterized quantum circuit template. While the correlation between each descriptor and performance of an algorithm remains to be investigated, methods and results from this study can be useful for both algorithm development and design of experiments for general variational {HQC} algorithms.}
       \field{eprinttype}{arxiv}
-      \field{issn}{2511-9044, 2511-9044}
-      \field{journaltitle}{Advanced Quantum Technologies}
-      \field{month}{12}
-      \field{number}{12}
-      \field{shortjournal}{Adv Quantum Tech}
-      \field{title}{Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms}
-      \field{urlday}{12}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{volume}{2}
-      \field{year}{2019}
+      \field{issn}{0306-0012, 1460-4744}
+      \field{journaltitle}{Chemical Society Reviews}
+      \field{number}{5}
+      \field{shortjournal}{Chem. Soc. Rev.}
+      \field{title}{A Quantum Computing View on Unitary Coupled Cluster Theory}
+      \field{volume}{51}
+      \field{year}{2022}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1900070}
-      \range{pages}{1}
+      \field{pages}{1659\bibrangedash 1684}
+      \range{pages}{26}
       \verb{doi}
-      \verb 10.1002/qute.201900070
+      \verb 10.1039/D1CS00932J
       \endverb
       \verb{eprint}
-      \verb 1905.10876 [quant-ph]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\YH93LC5T\\Sim et al. - 2019 - Expressibility and entangling capability of parame.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\W2HMBVDX\\1905.html:text/html
+      \verb 2109.15176 [physics, physics:quant-ph]
       \endverb
       \verb{urlraw}
-      \verb http://arxiv.org/abs/1905.10876
+      \verb http://arxiv.org/abs/2109.15176
       \endverb
       \verb{url}
-      \verb http://arxiv.org/abs/1905.10876
+      \verb http://arxiv.org/abs/2109.15176
+      \endverb
+    \endentry
+    \entry{gallimore_quantum_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c70c68798c4bd21abaa5e65c123aa1a}{%
+           family={Gallimore},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=02f748a8e450dbb961b5f9b94e9bb456}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Jinfeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{56fcb3e94c28286282c6c17df271284d}
+      \strng{fullhash}{56fcb3e94c28286282c6c17df271284d}
+      \strng{bibnamehash}{56fcb3e94c28286282c6c17df271284d}
+      \strng{authorbibnamehash}{56fcb3e94c28286282c6c17df271284d}
+      \strng{authornamehash}{56fcb3e94c28286282c6c17df271284d}
+      \strng{authorfullhash}{56fcb3e94c28286282c6c17df271284d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2470-0010, 2470-0029}
+      \field{journaltitle}{Physical Review D}
+      \field{month}{4}
+      \field{number}{7}
+      \field{shortjournal}{Phys. Rev. D}
+      \field{title}{Quantum Computing for Heavy Quarkonium Spectroscopy}
+      \field{volume}{107}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{074012}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.107.074012
+      \endverb
+      \verb{eprint}
+      \verb 2202.03333 [nucl-th]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2202.03333
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2202.03333
+      \endverb
+    \endentry
+    \entry{cizek_correlation_1966}{article}{}
+      \name{author}{1}{}{%
+        {{hash=16bc91fb941054e089aecb80b75b5cc0}{%
+           family={Čížek},
+           familyi={Č\bibinitperiod},
+           given={Jiří},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{16bc91fb941054e089aecb80b75b5cc0}
+      \strng{fullhash}{16bc91fb941054e089aecb80b75b5cc0}
+      \strng{bibnamehash}{16bc91fb941054e089aecb80b75b5cc0}
+      \strng{authorbibnamehash}{16bc91fb941054e089aecb80b75b5cc0}
+      \strng{authornamehash}{16bc91fb941054e089aecb80b75b5cc0}
+      \strng{authorfullhash}{16bc91fb941054e089aecb80b75b5cc0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0021-9606}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{month}{12}
+      \field{number}{11}
+      \field{shortjournal}{The Journal of Chemical Physics}
+      \field{title}{On the Correlation Problem in Atomic and Molecular Systems. Calculation of Wavefunction Components in Ursell‐Type Expansion Using Quantum‐Field Theoretical Methods}
+      \field{volume}{45}
+      \field{year}{1966}
+      \field{dateera}{ce}
+      \field{pages}{4256\bibrangedash 4266}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1063/1.1727484
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1727484
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1727484
+      \endverb
+    \endentry
+    \entry{mansky_decomposition_2023}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=7faf4b4475d87a4983753aa9fdfcd288}{%
+           family={Mansky},
+           familyi={M\bibinitperiod},
+           given={Maximilian\bibnamedelima Balthasar},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=631d5c1bd49b02c82015e1472c8001b0}{%
+           family={Puigvert},
+           familyi={P\bibinitperiod},
+           given={Victor\bibnamedelima Ramos},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=cb7761372f95cd938fe2ce4233d05b39}{%
+           family={Castillo},
+           familyi={C\bibinitperiod},
+           given={Santiago\bibnamedelima Londoño},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=50ab06712d6f9fe886f00ca1a2ff22a6}{%
+           family={Linnhoff-Popien},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{0125767fff44139b48a6fc58c8d3d985}
+      \strng{fullhash}{0125767fff44139b48a6fc58c8d3d985}
+      \strng{bibnamehash}{0125767fff44139b48a6fc58c8d3d985}
+      \strng{authorbibnamehash}{0125767fff44139b48a6fc58c8d3d985}
+      \strng{authornamehash}{0125767fff44139b48a6fc58c8d3d985}
+      \strng{authorfullhash}{0125767fff44139b48a6fc58c8d3d985}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{number}{{arXiv}:2305.04807}
+      \field{title}{Decomposition Algorithm of an Arbitrary Pauli Exponential through a Quantum Circuit}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2305.04807
+      \endverb
+      \verb{eprint}
+      \verb 2305.04807 [quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.04807
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.04807
       \endverb
       \keyw{Quantum Physics}
+    \endentry
+    \entry{pellow-jarman_comparison_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=76e5dc67953c2b5fafa18c40dd0aa8d5}{%
+           family={Pellow-Jarman},
+           familyi={P\bibinithyphendelim J\bibinitperiod},
+           given={Aidan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4420a280a2de7246243c97bc939db0e2}{%
+           family={Sinayskiy},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+        {{hash=052ae1a62a496248912bdafbc2834041}{%
+           family={Pillay},
+           familyi={P\bibinitperiod},
+           given={Anban},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecf465d0e024d56800cc6a80463bb252}
+      \strng{fullhash}{ecf465d0e024d56800cc6a80463bb252}
+      \strng{bibnamehash}{ecf465d0e024d56800cc6a80463bb252}
+      \strng{authorbibnamehash}{ecf465d0e024d56800cc6a80463bb252}
+      \strng{authornamehash}{ecf465d0e024d56800cc6a80463bb252}
+      \strng{authorfullhash}{ecf465d0e024d56800cc6a80463bb252}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{issn}{1573-1332}
+      \field{journaltitle}{Quantum Inf Process}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{A comparison of various classical optimizers for a variational quantum linear solver}
+      \field{volume}{20}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11128-021-03140-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11128-021-03140-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11128-021-03140-x
+      \endverb
+    \endentry
+    \entry{aggarwal_neural_2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=86d11a07b1bfeac58dc68f7a419b3039}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Charu\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{fullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{bibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorbibnamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authornamehash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \strng{authorfullhash}{86d11a07b1bfeac58dc68f7a419b3039}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-031-29641-3}
+      \field{langid}{english}
+      \field{shorttitle}{Neural Networks and Deep Learning}
+      \field{title}{Neural Networks and Deep Learning: A Textbook}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-031-29642-0
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-3-031-29642-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-3-031-29642-0
+      \endverb
+    \endentry
+    \entry{mitarai_quantum_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=80dde347ecbddac8ca3ca422033ac88b}{%
+           family={Mitarai},
+           familyi={M\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a08a5f4d85eae065d1ffb00b6e5e9cfe}{%
+           family={Negoro},
+           familyi={N\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2128f0d9f20b713e7afb473d0807577e}{%
+           family={Kitagawa},
+           familyi={K\bibinitperiod},
+           given={Masahiro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=569711c363027fed98622c62cda54209}{%
+           family={Fujii},
+           familyi={F\bibinitperiod},
+           given={Keisuke},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \strng{fullhash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \strng{bibnamehash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \strng{authorbibnamehash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \strng{authornamehash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \strng{authorfullhash}{f7fc68b9a55509691ce0c3c4f659181f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2469-9926, 2469-9934}
+      \field{journaltitle}{Phys. Rev. A}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Quantum Circuit Learning}
+      \field{volume}{98}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{032309}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.98.032309
+      \endverb
+      \verb{eprint}
+      \verb 1803.00745 [quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1803.00745
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1803.00745
+      \endverb
+    \endentry
+    \entry{schuld_evaluating_2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=566bc76219b4c730f8c2d46f5dcc455a}{%
+           family={Schuld},
+           familyi={S\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=561d6475ad9a0d32f8d1b33dd8d1dd5c}{%
+           family={Bergholm},
+           familyi={B\bibinitperiod},
+           given={Ville},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b2283e26f29ee3d76c9354deb486064e}{%
+           family={Gogolin},
+           familyi={G\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7f931b8a8e5094419b9a192b65e7c403}{%
+           family={Izaac},
+           familyi={I\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7ceb1ede08b81c0ede1cc933ce63d461}{%
+           family={Killoran},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \strng{fullhash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \strng{bibnamehash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \strng{authorbibnamehash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \strng{authornamehash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \strng{authorfullhash}{03ea86fe7b7040874115dd2ad94aa26f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2469-9926, 2469-9934}
+      \field{journaltitle}{Phys. Rev. A}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Evaluating analytic gradients on quantum hardware}
+      \field{volume}{99}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{032331}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.99.032331
+      \endverb
+      \verb{eprint}
+      \verb 1811.11184 [quant-ph]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1811.11184
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1811.11184
+      \endverb
+    \endentry
+    \entry{cauchy_analyse_2009}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=8495b42141aa0537d3c126985f420e06}{%
+           family={Cauchy},
+           familyi={C\bibinitperiod},
+           given={Augustin-Louis},
+           giveni={A\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{8495b42141aa0537d3c126985f420e06}
+      \strng{fullhash}{8495b42141aa0537d3c126985f420e06}
+      \strng{bibnamehash}{8495b42141aa0537d3c126985f420e06}
+      \strng{authorbibnamehash}{8495b42141aa0537d3c126985f420e06}
+      \strng{authornamehash}{8495b42141aa0537d3c126985f420e06}
+      \strng{authorfullhash}{8495b42141aa0537d3c126985f420e06}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Oeuvres complètes: Series 1}
+      \field{isbn}{978-1-108-00277-6}
+      \field{series}{Cambridge Library Collection - Mathematics}
+      \field{title}{{ANALYSE} {MATHÉMATIQUE}. – Méthodc générale pour la résolution des systèmes d'équations simultanées}
+      \field{volume}{10}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{399\bibrangedash 402}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1017/CBO9780511702396.063
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/oeuvres-completes/analyse-mathematique-methodc-generale-pour-la-resolution-des-systemes-dequations-simultanees/74A15B57C79B65C956D558CFA8766693
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/oeuvres-completes/analyse-mathematique-methodc-generale-pour-la-resolution-des-systemes-dequations-simultanees/74A15B57C79B65C956D558CFA8766693
+      \endverb
+    \endentry
+    \entry{ruder_overview_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{eprinttype}{arxiv}
+      \field{month}{6}
+      \field{number}{{arXiv}:1609.04747}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1609.04747
+      \endverb
+      \verb{eprint}
+      \verb 1609.04747 [cs]
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1609.04747
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1609.04747
+      \endverb
+    \endentry
+    \entry{qian_momentum_1999}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ea12a5aa5be72e296f6e28e632bf5b66}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \strng{fullhash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \strng{bibnamehash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \strng{authorbibnamehash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \strng{authornamehash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \strng{authorfullhash}{ea12a5aa5be72e296f6e28e632bf5b66}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{On the momentum term in gradient descent learning algorithms}
+      \field{volume}{12}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{145\bibrangedash 151}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/S0893-6080(98)00116-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608098001166
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608098001166
+      \endverb
+    \endentry
+    \entry{adagrad}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b8fbef1897da5bf46822ced31bc865c6}{%
+           family={Duchi},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0b3d32703edd2b7248e8e8f33c5893db}{%
+           family={Hazan},
+           familyi={H\bibinitperiod},
+           given={Elad},
+           giveni={E\bibinitperiod}}}%
+        {{hash=300d4990e626d975e0c28630444f63c3}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{fullhash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{bibnamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authorbibnamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authornamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authorfullhash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{61}
+      \field{title}{Adaptive Subgradient Methods for Online Learning and Stochastic Optimization}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2121\bibrangedash 2159}
+      \range{pages}{39}
+      \verb{urlraw}
+      \verb http://jmlr.org/papers/v12/duchi11a.html
+      \endverb
+      \verb{url}
+      \verb http://jmlr.org/papers/v12/duchi11a.html
+      \endverb
+    \endentry
+    \entry{zeiler2012adadeltaadaptivelearningrate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=90d345b65e166a9cfc0c6ddec4ddc3d6}{%
+           family={Zeiler},
+           familyi={Z\bibinitperiod},
+           given={Matthew\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \strng{fullhash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \strng{bibnamehash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \strng{authorbibnamehash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \strng{authornamehash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \strng{authorfullhash}{90d345b65e166a9cfc0c6ddec4ddc3d6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{ADADELTA: An Adaptive Learning Rate Method}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1212.5701
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1212.5701
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1212.5701
+      \endverb
     \endentry
     \entry{kingma_adam_2017}{misc}{}
       \name{author}{2}{}{%
@@ -1776,11 +3161,10 @@
       \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
       \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
       \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss {AdaMax}, a variant of Adam based on the infinity norm.}
       \field{day}{29}
       \field{eprinttype}{arxiv}
       \field{month}{1}
@@ -1788,20 +3172,13 @@
       \field{number}{{arXiv}:1412.6980}
       \field{shorttitle}{Adam}
       \field{title}{Adam: A Method for Stochastic Optimization}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{year}{2017}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/arXiv.1412.6980
       \endverb
       \verb{eprint}
       \verb 1412.6980 [cs]
-      \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\2ADMBM8Y\\Kingma and Ba - 2017 - Adam A Method for Stochastic Optimization.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\E2ESH276\\1412.html:text/html
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1412.6980
@@ -1830,11 +3207,10 @@
       \strng{authorbibnamehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
       \strng{authornamehash}{c883f46bc4773c0e0cd4ad615f0e1a00}
       \strng{authorfullhash}{c883f46bc4773c0e0cd4ad615f0e1a00}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A method is described for the minimization of a function of n variables, which depends on the comparison of function values at the (n + 1) vertices of a general simplex, followed by the replacement of the vertex with the highest value by another point. The simplex adapts itself to the local landscape, and contracts on to the final minimum. The method is shown to be effective and computationally compact. A procedure is given for the estimation of the Hessian matrix in the neighbourhood of the minimum, needed in statistical estimation problems.}
       \field{day}{1}
       \field{issn}{0010-4620}
       \field{journaltitle}{The Computer Journal}
@@ -1842,26 +3218,86 @@
       \field{number}{4}
       \field{shortjournal}{The Computer Journal}
       \field{title}{A Simplex Method for Function Minimization}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{7}
       \field{year}{1965}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{308\bibrangedash 313}
       \range{pages}{6}
       \verb{doi}
       \verb 10.1093/comjnl/7.4.308
-      \endverb
-      \verb{file}
-      \verb Nelder and Mead - 1965 - A Simplex Method for Function Minimization.pdf:C\:\\Users\\stepa\\Zotero\\storage\\2FIR6GYF\\Nelder and Mead - 1965 - A Simplex Method for Function Minimization.pdf:application/pdf;Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\WQBSTT4C\\354237.html:text/html
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1093/comjnl/7.4.308
       \endverb
       \verb{url}
       \verb https://doi.org/10.1093/comjnl/7.4.308
+      \endverb
+    \endentry
+    \entry{dowad_visualizing_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=00d2cfa1a84a3b82588cc220fb967d0b}{%
+           family={Dowad},
+           familyi={D\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \strng{fullhash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \strng{bibnamehash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \strng{authorbibnamehash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \strng{authornamehash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \strng{authorfullhash}{00d2cfa1a84a3b82588cc220fb967d0b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Visualizing Nelder-Mead Optimization {|} Alex Dowad Computes}
+      \verb{urlraw}
+      \verb https://alexdowad.github.io/visualizing-nelder-mead/
+      \endverb
+      \verb{url}
+      \verb https://alexdowad.github.io/visualizing-nelder-mead/
+      \endverb
+    \endentry
+    \entry{CHENG201580}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5ee8c5a2dd4684071066dc37a9c38b82}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Jade\bibnamedelima Yu},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=92a93b31d806e838c1e398f964747a40}{%
+           family={Mailund},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{461d53445afad2c5527eb051f2382140}
+      \strng{fullhash}{461d53445afad2c5527eb051f2382140}
+      \strng{bibnamehash}{461d53445afad2c5527eb051f2382140}
+      \strng{authorbibnamehash}{461d53445afad2c5527eb051f2382140}
+      \strng{authornamehash}{461d53445afad2c5527eb051f2382140}
+      \strng{authorfullhash}{461d53445afad2c5527eb051f2382140}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-9271}
+      \field{journaltitle}{Computational Biology and Chemistry}
+      \field{note}{13th Asia Pacifi c Bioinformatics Conference, HsinChu, Taiwan, 21-23 January 2015}
+      \field{title}{Ancestral population genomics using coalescence hidden Markov models and heuristic optimisation algorithms}
+      \field{volume}{57}
+      \field{year}{2015}
+      \field{pages}{80\bibrangedash 92}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compbiolchem.2015.02.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1476927115000183
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1476927115000183
       \endverb
     \endentry
     \entry{powell_efficient_1964}{article}{}
@@ -1878,11 +3314,11 @@
       \strng{authorbibnamehash}{15643444aed9bbb3d150d9895b848437}
       \strng{authornamehash}{15643444aed9bbb3d150d9895b848437}
       \strng{authorfullhash}{15643444aed9bbb3d150d9895b848437}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A simple variation of the well-known method of minimizing a function of several variables by changing one parameter at a time is described. This variation is such that when the procedure is applied to a quadratic form, it causes conjugate directions to be chosen, so the ultimate rate of convergence is fast when the method is used to minimize a general function. A further variation completes the method, and its ensures that the convergence rate from a bad approximation to a minimum is always efficient. Practical applications of the procedure have proved to be very satisfactory, and numerical examples are given in which functions of up to twenty variables are minimized.}
       \field{day}{1}
       \field{issn}{0010-4620}
       \field{journaltitle}{The Computer Journal}
@@ -1890,26 +3326,75 @@
       \field{number}{2}
       \field{shortjournal}{The Computer Journal}
       \field{title}{An efficient method for finding the minimum of a function of several variables without calculating derivatives}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{7}
       \field{year}{1964}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{155\bibrangedash 162}
       \range{pages}{8}
       \verb{doi}
       \verb 10.1093/comjnl/7.2.155
-      \endverb
-      \verb{file}
-      \verb Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\BELPC73G\\335330.html:text/html
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1093/comjnl/7.2.155
       \endverb
       \verb{url}
       \verb https://doi.org/10.1093/comjnl/7.2.155
+      \endverb
+    \endentry
+    \entry{Powell_cobyla}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=15643444aed9bbb3d150d9895b848437}{%
+           family={Powell},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi J.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=c27d9ed473338a5575aa0be7cef77205}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Susana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d49d181b4bf2ffff760749faec0adc56}{%
+           family={Hennart},
+           familyi={H\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{fullhash}{15643444aed9bbb3d150d9895b848437}
+      \strng{bibnamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authorbibnamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authornamehash}{15643444aed9bbb3d150d9895b848437}
+      \strng{authorfullhash}{15643444aed9bbb3d150d9895b848437}
+      \strng{editorbibnamehash}{d6cf89a51c417f1656d00c71cf1a0920}
+      \strng{editornamehash}{d6cf89a51c417f1656d00c71cf1a0920}
+      \strng{editorfullhash}{d6cf89a51c417f1656d00c71cf1a0920}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Optimization and Numerical Analysis}
+      \field{isbn}{978-94-015-8330-5}
+      \field{title}{A Direct Search Optimization Method That Models the Objective and Constraint Functions by Linear Interpolation}
+      \field{year}{1994}
+      \field{pages}{51\bibrangedash 67}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-94-015-8330-5_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-94-015-8330-5_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-94-015-8330-5_4
       \endverb
     \endentry
     \entry{ostaszewski_structure_2021}{article}{}
@@ -1936,11 +3421,10 @@
       \strng{authorbibnamehash}{9cf074657dbf9584857bf97b2929b6b6}
       \strng{authornamehash}{9cf074657dbf9584857bf97b2929b6b6}
       \strng{authorfullhash}{9cf074657dbf9584857bf97b2929b6b6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We propose an efficient method for simultaneously optimizing both the structure and parameter values of quantum circuits with only a small computational overhead. Shallow circuits that use structure optimization perform significantly better than circuits that use parameter updates alone, making this method particularly suitable for noisy intermediate-scale quantum computers. We demonstrate the method for optimizing a variational quantum eigensolver for finding the ground states of Lithium Hydride and the Heisenberg model in simulation, and for finding the ground state of Hydrogen gas on the {IBM} Melbourne quantum computer.}
       \field{day}{28}
       \field{eprinttype}{arxiv}
       \field{issn}{2521-327X}
@@ -1948,13 +3432,9 @@
       \field{month}{1}
       \field{shortjournal}{Quantum}
       \field{title}{Structure optimization for parameterized quantum circuits}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
       \field{volume}{5}
       \field{year}{2021}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{391}
       \range{pages}{1}
       \verb{doi}
@@ -1963,16 +3443,12 @@
       \verb{eprint}
       \verb 1905.09692 [quant-ph]
       \endverb
-      \verb{file}
-      \verb arXiv Fulltext PDF:C\:\\Users\\stepa\\Zotero\\storage\\S7CXYE82\\Ostaszewski et al. - 2021 - Structure optimization for parameterized quantum c.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\stepa\\Zotero\\storage\\DDM7Y9QY\\1905.html:text/html
-      \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1905.09692
       \endverb
       \verb{url}
       \verb http://arxiv.org/abs/1905.09692
       \endverb
-      \keyw{Quantum Physics}
     \endentry
   \enddatalist
 \endrefsection
